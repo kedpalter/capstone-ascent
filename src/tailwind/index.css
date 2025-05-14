@@ -1,3 +1,13 @@
 /* Khi code -> code css ở folder tailwind, khi sử dụng thì sử dụng tại folder css */
+:root {
+    --primary-pink: #ED145B;
+    --primary-cyan: #1CBBB4;
+    --primary-green: #73BE48;
+    --primary-orange: #F7941E;
+    --primary-p: #686868;
+}
+* {
+    font-family: 'Nunito', sans-serif;
+}
 @import "tailwindcss";
 @config "../../tailwind.config.js"; /* Config tailwind để custom cấu hình */
