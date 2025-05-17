@@ -7,12 +7,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        'border-social': 'rbga(255, 255, 255, 0.2',
         primary: {
           DEFAULT: '#1e40af',   // cấu hình màu primary
           light: '#3b82f6',     // có thể cấu hình sâu hơn về màu sắc của primary
-          dark: 'red',     
+          dark: 'red',
         },
-       
+
       },
     },
   },
