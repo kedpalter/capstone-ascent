@@ -589,12 +589,6 @@
   .border-\[\#fff\]\/20 {
     border-color: color-mix(in oklab, #fff 20%, transparent);
   }
-  .border-\[var\(\)\] {
-    border-color: var();
-  }
-  .border-\[var\(--primary-\)\] {
-    border-color: var(--primary-);
-  }
   .border-\[var\(--primary-border\)\] {
     border-color: var(--primary-border);
   }
@@ -616,6 +610,9 @@
   .bg-\[\#6d6d6d\] {
     background-color: #6d6d6d;
   }
+  .bg-\[url\] {
+    background-color: url;
+  }
   .bg-\[var\(--primary-bgc\)\] {
     background-color: var(--primary-bgc);
   }
@@ -631,9 +628,6 @@
   .bg-\[var\(--primary-pink\)\] {
     background-color: var(--primary-pink);
   }
-  .bg-\[var\(--primary-red\)\] {
-    background-color: var(--primary-red);
-  }
   .bg-black {
     background-color: var(--color-black);
   }
@@ -648,6 +642,18 @@
   }
   .bg-zinc-200 {
     background-color: var(--color-zinc-200);
+  }
+  .bg-\[url\(\)\] {
+    background-image: url();
+  }
+  .bg-\[url\(\.\/src\/img\/\)\] {
+    background-image: url(./src/img/);
+  }
+  .bg-\[url\(\.\/src\/img\/bg-img\.png\)\] {
+    background-image: url(./src/img/bg-img.png);
+  }
+  .bg-\[url\(\/src\/img\/bg-img\.png\)\] {
+    background-image: url(/src/img/bg-img.png);
   }
   .bg-clip-padding {
     background-clip: padding-box;
@@ -723,6 +729,15 @@
   }
   .align-bottom {
     vertical-align: bottom;
+  }
+  .font-\[\"\"\] {
+    font-family: "";
+  }
+  .font-\[\"Jost\"\] {
+    font-family: "Jost";
+  }
+  .font-\[Jost\] {
+    font-family: Jost;
   }
   .text-2xl {
     font-size: var(--text-2xl);
