@@ -5,9 +5,17 @@
     --primary-green: #73BE48;
     --primary-orange: #F7941E;
     --primary-p: #686868;
+    --primary-bgc: #FFF0E5;
 }
+
 * {
     font-family: 'Nunito', sans-serif;
 }
+
+.container {
+    margin: auto;
+}
+
 @import "tailwindcss";
-@config "../../tailwind.config.js"; /* Config tailwind để custom cấu hình */
+@config "../../tailwind.config.js";
+/* Config tailwind để custom cấu hình */
