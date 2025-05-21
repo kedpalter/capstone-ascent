@@ -249,12 +249,15 @@
     </header>
     <section class="banner bg-[var(--primary-bgc)]">
         <div class="container border">
-            <div class="title-block flex justify-between items-center">
-                <img src="./src/img/boy_img_1.png" alt="boy1">
+            <div class="title-block flex justify-between items-center border border-red-500">
+                <div class="relative">
+                   <img src="./src/img/boy_img_1.png" alt="boy1">
+                   <span class="absolute w-full h-full top-2 -left-2.5 rounded-full border-2 border-[var(--primary-orange)]"></span>
+                </div>
                 <div class="title flex flex-col justify-around items-center">
-                    <h1 class="font-[Jost]">Exploring Minds</h1>
-                    <h1 class="">Elementary School</h1>
-                    <p>Starting a corporate business typically involves several steps, such as develo a business</p>
+                    <h1 class="font-[Jost] text-[70px]">Exploring Minds</h1>
+                    <h1 class="text-[70px] font-bold">Elementary <span class="text-[var(--primary-pink)]">School</span></h1>
+                    <p class="w-[400px] text-center text-[var(--primary-p)]">Starting a corporate business typically involves several steps, such as develo a business</p>
                     <div
                         class="banner-btn w-[150px] h-[60px] relative border cursor-pointer rounded-lg text-white font-normal bg-[var(--primary-green)] px-6 py-5 hover:[&_span]:w-full">
                         <div class="w-full h-full absolute top-0 left-0 flex justify-center items-center z-20">
