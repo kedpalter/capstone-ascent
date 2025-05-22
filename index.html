@@ -10,6 +10,8 @@
     <!-- font -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost">
+    <!-- Animation WOW -->
+    <link rel="stylesheet" href="css/animate.css">
     <!-- output css -->
     <link rel="stylesheet" href="./src/css/index.css">
     <!-- custom css -->
@@ -248,16 +250,19 @@
         </div>
     </header>
     <section class="banner bg-[var(--primary-bgc)]">
-        <div class="container border">
-            <div class="title-block flex justify-between items-center border border-red-500">
+        <div class="container">
+            <div class="title-block flex justify-between items-center">
                 <div class="relative">
-                   <img src="./src/img/boy_img_1.png" alt="boy1">
-                   <span class="absolute w-full h-full top-2 -left-2.5 rounded-full border-2 border-[var(--primary-orange)]"></span>
+                    <img src="./src/img/boy_img_1.png" alt="boy1">
+                    <span
+                        class="absolute w-full h-full top-2 -left-2.5 rounded-full border-2 border-[var(--primary-orange)]"></span>
                 </div>
                 <div class="title flex flex-col justify-around items-center">
                     <h1 class="font-[Jost] text-[70px]">Exploring Minds</h1>
-                    <h1 class="text-[70px] font-bold">Elementary <span class="text-[var(--primary-pink)]">School</span></h1>
-                    <p class="w-[400px] text-center text-[var(--primary-p)]">Starting a corporate business typically involves several steps, such as develo a business</p>
+                    <h1 class="text-[70px] font-bold">Elementary <span class="text-[var(--primary-pink)]">School</span>
+                    </h1>
+                    <p class="w-[400px] text-center text-[var(--primary-p)]">Starting a corporate business typically
+                        involves several steps, such as develo a business</p>
                     <div
                         class="banner-btn w-[150px] h-[60px] relative border cursor-pointer rounded-lg text-white font-normal bg-[var(--primary-green)] px-6 py-5 hover:[&_span]:w-full">
                         <div class="w-full h-full absolute top-0 left-0 flex justify-center items-center z-20">
@@ -267,27 +272,33 @@
                             class="w-0 h-full rounded-lg absolute top-0 left-0 bg-[var(--primary-cyan)] duration-500 overflow-hidden z-10"></span>
                     </div>
                 </div>
-                <div class="star-icon">
-                    <img src="./src/img/shap.png" alt="star1">
-                    <img src="./src/img/shap.png" alt="star2">
-                    <img src="./src/img/shap.png" alt="star3">
+                <div class="star-icon relative">
+                    <img src="./src/img/shap.png" alt="star1" class="relative">
+                    <img src="./src/img/shap.png" alt="star2" class="absolute -top-10 left-7 scale-50">
+                    <img src="./src/img/shap.png" alt="star3" class="absolute top-10 -left-7 scale-70">
                 </div>
             </div>
-            <div class="decor-block">
-                <img src="./src/img/painting.png" alt="painting">
-                <img src="./src/img/boy_img_2.png" alt="boy2">
+            <div class="decor-block relative pt-[70px]">
+                <img src="./src/img/painting.png" alt="painting" class="relative">
+                <div class="absolute -top-10 right-0">
+                    <img src="./src/img/boy_img_2.png" alt="boy2">
+                    <span
+                        class="absolute w-full h-full top-2 -left-2.5 rounded-full border-2 border-[var(--primary-cyan)]"></span>
+                </div>
+
             </div>
         </div>
     </section>
-    <section class="numberTalk">
-        <div class="container flex">
-            <div class="introduce flex-1/2">
-                <h3 class="">Number Talks</h3>
-                <h1>Invest in education invest<br>in the future</h1>
-                <p class="">Lorem ipsum dolor sit amet consectetur. Amet lectus mi ultricies dictum facilisis sem.
-                    Imperdiet
-                    massa turpis sit proin metus volutpat loren ipsum Lorem ipsum dolor sit amet consectetur. Amet
-                    lectus mi ultricies dictum</p>
+    <section class="numberTalk py-20">
+        <div class="container flex gap-10">
+            <div class="introduce flex-1/2 border">
+                <h3 class="text-lg font-bold text-[var(--primary-orange)]">Number Talks</h3>
+                <h1 class="text-3xl font-bold">Invest in education invest<br>in the future</h1>
+                <p class="text-base text-[var(--primary-p)] my-10">Lorem ipsum dolor sit amet consectetur. Amet lectus
+                    mi ultricies dictum facilisis sem. Imperdiet massa turpis sit proin metus volutpat loren ipsum Lorem
+                    ipsum dolor sit amet consectetur. Amet
+                    lectus mi ultricies dictum
+                </p>
                 <div
                     class="numberTalks-btn w-[150px] h-[60px] relative border border-[var(--primary-border)] cursor-pointer rounded-lg text-black font-normal bg-white px-6 py-5 hover:[&_span]:w-full hover:text-white duration-500">
                     <div class="w-full h-full absolute top-0 left-0 flex justify-center items-center z-20">
@@ -297,57 +308,75 @@
                         class="w-0 h-full rounded-lg absolute top-0 left-0 bg-[var(--primary-cyan)] duration-500 overflow-hidden z-10"></span>
                 </div>
             </div>
-            <div class="stats flex-1/2 grid grid-cols-2">
-                <div class="running border border-[var(--primary-border)] rounded-lg flex gap-2">
-                    <i class="fa fa-book-open bg-[var(--primary-orange)] rounded-full p-5 text-2xl text-white"></i>
+            <div class="stats border flex-1/2 grid grid-cols-2 gap-7">
+                <div
+                    class="running border border-[var(--primary-border)] rounded-lg flex gap-2 justify-start items-center p-6">
+                    <div class="w-20 h-20 flex justify-center items-center bg-[var(--primary-orange)] rounded-full">
+                        <i class="fa fa-book-open text-4xl text-white"></i>
+                    </div>
                     <div>
                         <h1 class="text-2xl font-bold">20K</h1>
-                        <p class="text-[var(--primary-p)]">Running Students</p>
+                        <p class="text-base text-[var(--primary-p)]">Running Students</p>
                     </div>
                 </div>
-                <div class="completed border border-[var(--primary-border)] rounded-lg flex gap-2">
-                    <i class="fa fa-book-open bg-[var(--primary-orange)] rounded-full p-5 text-2xl text-white"></i>
+                <div
+                    class="completed border border-[var(--primary-border)] rounded-lg flex gap-2 justify-start items-center p-6">
+                    <div class="w-20 h-20 flex justify-center items-center bg-[var(--primary-pink)] rounded-full">
+                        <i class="fa fa-book-open text-4xl text-white"></i>
+                    </div>
                     <div>
-                        <h1 class="text-2xl font-bold">20K</h1>
-                        <p class="text-[var(--primary-p)]">Running Students</p>
+                        <h1 class="text-2xl font-bold">13K</h1>
+                        <p class="text-base text-[var(--primary-p)]">Completed</p>
                     </div>
                 </div>
-                <div class="award border border-[var(--primary-border)] rounded-lg flex gap-2">
-                    <i class="fa fa-book-open bg-[var(--primary-orange)] rounded-full p-5 text-2xl text-white"></i>
+                <div
+                    class="award border border-[var(--primary-border)] rounded-lg flex gap-2 justify-start items-center p-6">
+                    <div class="w-20 h-20 flex justify-center items-center bg-[var(--primary-green)] rounded-full">
+                        <i class="fa fa-book-open text-4xl text-white"></i>
+                    </div>
                     <div>
-                        <h1 class="text-2xl font-bold">20K</h1>
-                        <p class="text-[var(--primary-p)]">Running Students</p>
+                        <h1 class="text-2xl font-bold">3K</h1>
+                        <p class="text-base text-[var(--primary-p)]">Award Winning</p>
                     </div>
                 </div>
-                <div class="guardian border border-[var(--primary-border)] rounded-lg flex gap-2">
-                    <i class="fa fa-book-open bg-[var(--primary-orange)] rounded-full p-5 text-2xl text-white"></i>
+                <div
+                    class="guardian border border-[var(--primary-border)] rounded-lg flex gap-2 justify-start items-center p-6">
+                    <div class="w-20 h-20 flex justify-center items-center bg-[var(--primary-cyan)] rounded-full">
+                        <i class="fa fa-book-open text-4xl text-white"></i>
+                    </div>
                     <div>
-                        <h1 class="text-2xl font-bold">20K</h1>
-                        <p class="text-[var(--primary-p)]">Running Students</p>
+                        <h1 class="text-2xl font-bold">13K</h1>
+                        <p class="text-base text-[var(--primary-p)]">Guardian Satishfaction</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="about">
-        <div class="container">
-            <div>
-                <img src="./src/img/shap-1.png" alt="decor2">
+    <section class="about py-20">
+        <div class="container flex gap-10">
+            <div class="flex-1/2 relative flex gap-7 items-end">
+                <img src="./src/img/shap-1.png" alt="decor2" class="absolute -top-10 -left-10">
                 <img src="./src/img/about-1.png" alt="about1">
-                <div>
-                    <img src="./src/img/icreement.png" alt="increement">
-                    <h3>Academy</h3>
-                    <p>Learning Ladder School</p>
+                <div class="flex flex-col gap-8">
+                    <div class="px-5 py-6 rounded-lg bg-[var(--primary-bgc)] flex flex-col justify-center items-center">
+                        <img src="./src/img/icreement.png" alt="increement">
+                        <h3 class="text-xl font-bold">Academy</h3>
+                        <p class="text-[var(--primary-p)]">Learning Ladder School</p>
+                    </div>
+                    <div class="px-5 py-6 rounded-lg drop-shadow-[0px_4.8px_24.4px_rgba(19,16,34,0.10)] bg-white">
+                        <h1 class="text-4xl font-bold text-[var(--primary-cyan)]">10+</h1>
+                        <p class="text-[var(--primary-p)]">Learning Ladder School</p>
+                    </div>
                 </div>
-                <div>
-                    <h1>10+</h1>
-                    <p>Learning Ladder School</p>
-                </div>
+
             </div>
-            <div class="text-block">
-                <h3>About Us</h3>
-                <h1>Unlocking Potential, One Child at a just Time in school</h1>
-                <p>Lorem ipsum dolor sit amet consectetur. Amet lectus mi ultricies dictum facilisis sem. Imperdiet
+            <div class="text-block flex-1/2">
+                <h3 class="text-lg font-bold text-[var(--primary-cyan)]">About Us</h3>
+                <h1 class="text-3xl font-bold w-2/3">Unlocking Potential, One Child at a just Time in school</h1>
+                <p class="w-2/3 text-base text-[var(--primary-p)] my-10">Lorem ipsum dolor sit amet consectetur. Amet
+                    lectus
+                    mi
+                    ultricies dictum facilisis sem. Imperdiet
                     massa turpis sit proin metus volutpat loren ipsum Lorem ipsum dolor sit amet consectetur. Amet
                     lectus mi ultricies dictum</p>
                 <div
@@ -361,56 +390,93 @@
             </div>
         </div>
     </section>
-    <section class="programs">
-        <div class="container">
-            <h3>Education Programs</h3>
-            <h1>Strong Foundation for Success For Nurturing Curiosityl</h1>
-            <div class="content">
-                <div class="online">
-                    <div class="text">
-                        <h2>Online Class</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit platea the ,osr of a proin mollis
-                            pretium facilisi in, ligula volutpat</p>
-                        <a href="#">Read More <i class="fa fa-arrow-right mx-2"></i></a>
+    <section class="programs py-20">
+        <div class="container relative">
+            <h3 class="text-center text-lg font-bold text-[var(--primary-green)]">Education Programs</h3>
+            <h1 class="text-center text-3xl font-bold">Strong Foundation for Success For<br>Nurturing Curiosityl</h1>
+            <div class="content grid grid-cols-2 gap-y-10 gap-x-20 my-20">
+                <div
+                    class="online group relative bg-white border border-[var(--primary-border)] rounded-lg hover:[&_h2]:text-[var(--primary-green)] hover:border-transparent hover:shadow-4 duration-300 flex items-center">
+                    <div class="text p-11">
+                        <div class="pl-10">
+                            <h2 class="text-2xl font-bold duration-300 hover:cursor-pointer">Online Class</h2>
+                            <p class="py-5 text-base text-[var(--primary-p)]">Lorem ipsum dolor sit amet consectetur
+                                adipiscing elit platea the ,osr of a
+                                proin mollis
+                                pretium facilisi in, ligula volutpat</p>
+                            <a href="#"
+                                class="hover:text-[var(--primary-green)] hover:[&_i]:translate-x-1 duration-400">Read
+                                More <i class="fa fa-arrow-right mx-2 duration-400"></i></a>
+                        </div>
                     </div>
-                    <div class="programIcon">
-
-                    </div>
-                </div>
-                <div class="formal">
-                    <div class="text">
-                        <h2>Online Class</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit platea the ,osr of a proin mollis
-                            pretium facilisi in, ligula volutpat</p>
-                        <a href="#">Read More <i class="fa fa-arrow-right mx-2"></i></a>
-                    </div>
-                    <div class="programIcon">
-
+                    <div
+                        class="programIcon absolute -translate-x-1/2 w-[90px] h-[90px] bg-white group-hover:bg-[var(--primary-green)] border border-[var(--primary-border)] rounded-lg flex justify-center items-center duration-300">
+                        <i
+                            class="fa fa-car-side text-5xl text-[var(--primary-green)] group-hover:text-white duration-300"></i>
                     </div>
                 </div>
-                <div class="preschool">
-                    <div class="text">
-                        <h2>Online Class</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit platea the ,osr of a proin mollis
-                            pretium facilisi in, ligula volutpat</p>
-                        <a href="#">Read More <i class="fa fa-arrow-right mx-2"></i></a>
+                <div
+                    class="formal group relative bg-white border border-[var(--primary-border)] rounded-lg hover:[&_h2]:text-[var(--primary-green)] hover:border-transparent hover:shadow-4 duration-300 flex items-center">
+                    <div class="text p-11">
+                        <div class="pl-10">
+                            <h2 class="text-2xl font-bold duration-300 hover:cursor-pointer">Formal Tuition</h2>
+                            <p class="py-5 text-base text-[var(--primary-p)]">Lorem ipsum dolor sit amet consectetur
+                                adipiscing elit platea the ,osr of a
+                                proin mollis
+                                pretium facilisi in, ligula volutpat</p>
+                            <a href="#"
+                                class="hover:text-[var(--primary-green)] hover:[&_i]:translate-x-1 duration-400">Read
+                                More <i class="fa fa-arrow-right mx-2 duration-400"></i></a>
+                        </div>
                     </div>
-                    <div class="programIcon">
-
+                    <div
+                        class="programIcon absolute -translate-x-1/2 w-[90px] h-[90px] bg-white group-hover:bg-[var(--primary-green)] border border-[var(--primary-border)] rounded-lg flex justify-center items-center duration-300">
+                        <i
+                            class="fa fa-car-side text-5xl text-[var(--primary-green)] group-hover:text-white duration-300"></i>
                     </div>
                 </div>
-                <div class="tuition">
-                    <div class="text">
-                        <h2>Online Class</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit platea the ,osr of a proin mollis
-                            pretium facilisi in, ligula volutpat</p>
-                        <a href="#">Read More <i class="fa fa-arrow-right mx-2"></i></a>
+                <div
+                    class="preschool group relative bg-white border border-[var(--primary-border)] rounded-lg hover:[&_h2]:text-[var(--primary-green)] hover:border-transparent hover:shadow-4 duration-300 flex items-center">
+                    <div class="text p-11">
+                        <div class="pl-10">
+                            <h2 class="text-2xl font-bold duration-300 hover:cursor-pointer">Preschool</h2>
+                            <p class="py-5 text-base text-[var(--primary-p)]">Lorem ipsum dolor sit amet consectetur
+                                adipiscing elit platea the ,osr of a
+                                proin mollis
+                                pretium facilisi in, ligula volutpat</p>
+                            <a href="#"
+                                class="hover:text-[var(--primary-green)] hover:[&_i]:translate-x-1 duration-400">Read
+                                More <i class="fa fa-arrow-right mx-2 duration-400"></i></a>
+                        </div>
                     </div>
-                    <div class="programIcon">
-
+                    <div
+                        class="programIcon absolute -translate-x-1/2 w-[90px] h-[90px] bg-white group-hover:bg-[var(--primary-green)] border border-[var(--primary-border)] rounded-lg flex justify-center items-center duration-300">
+                        <i
+                            class="fa fa-car-side text-5xl text-[var(--primary-green)] group-hover:text-white duration-300"></i>
+                    </div>
+                </div>
+                <div
+                    class="specialTuition group relative bg-white border border-[var(--primary-border)] rounded-lg hover:[&_h2]:text-[var(--primary-green)] hover:border-transparent hover:shadow-4 duration-300 flex items-center">
+                    <div class="text p-11">
+                        <div class="pl-10">
+                            <h2 class="text-2xl font-bold duration-300 hover:cursor-pointer">Secial Tuition</h2>
+                            <p class="py-5 text-base text-[var(--primary-p)]">Lorem ipsum dolor sit amet consectetur
+                                adipiscing elit platea the ,osr of a
+                                proin mollis
+                                pretium facilisi in, ligula volutpat</p>
+                            <a href="#"
+                                class="hover:text-[var(--primary-green)] hover:[&_i]:translate-x-1 duration-400">Read
+                                More <i class="fa fa-arrow-right mx-2 duration-400"></i></a>
+                        </div>
+                    </div>
+                    <div
+                        class="programIcon absolute -translate-x-1/2 w-[90px] h-[90px] bg-white group-hover:bg-[var(--primary-green)] border border-[var(--primary-border)] rounded-lg flex justify-center items-center duration-300">
+                        <i
+                            class="fa fa-car-side text-5xl text-[var(--primary-green)] group-hover:text-white duration-300"></i>
                     </div>
                 </div>
             </div>
+            <img src="./src/img/pencil-rocket.png" alt="pencil-rocket" class="absolute top-0 right-0 -z-10">
         </div>
     </section>
     <section class="portfolio">
@@ -629,6 +695,10 @@
 
 
     <script src="/node_modules/tw-elements/js/tw-elements.umd.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 
 </html>
