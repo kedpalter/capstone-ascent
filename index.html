@@ -481,52 +481,92 @@
     </section>
     <section class="portfolio">
         <div class="container">
-            <h3>Latest Portfolio</h3>
-            <h1>Exploring Minds Elementary School Education the only school</h1>
-            <!--Pills navigation-->
-            <ul class="mb-5 flex list-none flex-col flex-wrap ps-0 md:flex-row" id="pills-tab" role="tablist"
-                data-twe-nav-ref>
-                <li role="presentation">
-                    <a href="#pills-home"
-                        class="my-2 block rounded bg-zinc-100 px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-500 data-[twe-nav-active]:!bg-primary-100 data-[twe-nav-active]:text-primary-700 dark:bg-neutral-700 dark:text-white/50 dark:data-[twe-nav-active]:!bg-slate-900 dark:data-[twe-nav-active]:text-primary-500 md:me-4"
-                        id="pills-home-tab" data-twe-toggle="pill" data-twe-target="#pills-home" data-twe-nav-active
-                        role="tab" aria-controls="pills-home" aria-selected="true">Home</a>
-                </li>
-                <li role="presentation">
-                    <a href="#pills-profile"
-                        class="my-2 block rounded bg-zinc-100 px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-500 data-[twe-nav-active]:!bg-primary-100 data-[twe-nav-active]:text-primary-700 dark:bg-neutral-700 dark:text-white/50 dark:data-[twe-nav-active]:!bg-slate-900 dark:data-[twe-nav-active]:text-primary-500 md:me-4"
-                        id="pills-profile-tab" data-twe-toggle="pill" data-twe-target="#pills-profile" role="tab"
-                        aria-controls="pills-profile" aria-selected="false">Profile</a>
-                </li>
-                <li role="presentation">
-                    <a href="#pills-contact"
-                        class="my-2 block rounded bg-zinc-100 px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-500 data-[twe-nav-active]:!bg-primary-100 data-[twe-nav-active]:text-primary-700 dark:bg-neutral-700 dark:text-white/50 dark:data-[twe-nav-active]:!bg-slate-900 dark:data-[twe-nav-active]:text-primary-500 md:me-4"
-                        id="pills-contact-tab" data-twe-toggle="pill" data-twe-target="#pills-contact" role="tab"
-                        aria-controls="pills-contact" aria-selected="false">Contact</a>
-                </li>
-                <li role="presentation">
-                    <a href="#pills-disabled"
-                        class="pointer-events-none my-2 block rounded bg-zinc-200 px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-400 dark:bg-neutral-600 dark:text-neutral-500"
-                        id="pills-disabled-tab" data-twe-toggle="pill" data-twe-target="#pills-disabled" role="tab"
-                        aria-controls="pills-disabled" aria-selected="false">Disabled</a>
-                </li>
-            </ul>
+            <h3 class="text-center text-lg font-bold text-[var(--primary-cyan)]">Latest Portfolio</h3>
+            <h1 class="text-center text-3xl font-bold">Exploring Minds Elementary School<br>Education the only school
+            </h1>
+            <div class="pill-nav border">
+                <!--Pills navigation-->
+                <ul class="mb-5 flex list-none flex-col flex-wrap ps-0 md:flex-row justify-center gap-5" id="pills-tab"
+                    role="tablist" data-twe-nav-ref>
+                    <li role="presentation">
+                        <a href="#pills-education"
+                            class="my-2 block rounded-lg bg-white border border-[var(--primary-border)] px-7 pb-3.5 pt-4 text-lg font-medium leading-tight hover:bg-[var(--primary-orange)] hover:text-white text-[var(--primary-p)] hover:border-none data-[twe-nav-active]:bg-[var(--primary-orange)] data-[twe-nav-active]:text-white data-[twe-nav-active]:border-none dark:bg-neutral-700 dark:text-white/50 dark:data-[twe-nav-active]:!bg-slate-900 dark:data-[twe-nav-active]:text-primary-500 md:me-4 duration-300"
+                            id="pills-education-tab" data-twe-toggle="pill" data-twe-target="#pills-education"
+                            data-twe-nav-active role="tab" aria-controls="pills-education"
+                            aria-selected="true">Education</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#pills-school"
+                            class="my-2 block rounded-lg bg-white border border-[var(--primary-border)] px-7 pb-3.5 pt-4 text-lg font-medium leading-tight hover:bg-[var(--primary-orange)] hover:text-white text-[var(--primary-p)] hover:border-none data-[twe-nav-active]:bg-[var(--primary-orange)] data-[twe-nav-active]:text-white data-[twe-nav-active]:border-none dark:bg-neutral-700 dark:text-white/50 dark:data-[twe-nav-active]:!bg-slate-900 dark:data-[twe-nav-active]:text-primary-500 md:me-4 duration-300"
+                            id="pills-school-tab" data-twe-toggle="pill" data-twe-target="#pills-school" role="tab"
+                            aria-controls="pills-school" aria-selected="true">School</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#pills-learn"
+                            class="my-2 block rounded-lg bg-white border border-[var(--primary-border)] px-7 pb-3.5 pt-4 text-lg font-medium leading-tight hover:bg-[var(--primary-orange)] hover:text-white text-[var(--primary-p)] hover:border-none data-[twe-nav-active]:bg-[var(--primary-orange)] data-[twe-nav-active]:text-white data-[twe-nav-active]:border-none dark:bg-neutral-700 dark:text-white/50 dark:data-[twe-nav-active]:!bg-slate-900 dark:data-[twe-nav-active]:text-primary-500 md:me-4 duration-300"
+                            id="pills-learn-tab" data-twe-toggle="pill" data-twe-target="#pills-learn" role="tab"
+                            aria-controls="pills-learn" aria-selected="true">Learn</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#pills-child"
+                            class="my-2 block rounded-lg bg-white border border-[var(--primary-border)] px-7 pb-3.5 pt-4 text-lg font-medium leading-tight hover:bg-[var(--primary-orange)] hover:text-white text-[var(--primary-p)] hover:border-none data-[twe-nav-active]:bg-[var(--primary-orange)] data-[twe-nav-active]:text-white data-[twe-nav-active]:border-none dark:bg-neutral-700 dark:text-white/50 dark:data-[twe-nav-active]:!bg-slate-900 dark:data-[twe-nav-active]:text-primary-500 md:me-4 duration-300"
+                            id="pills-child-tab" data-twe-toggle="pill" data-twe-target="#pills-child" role="tab"
+                            aria-controls="pills-child" aria-selected="true">Child</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#pills-coaching"
+                            class="my-2 block rounded-lg bg-white border border-[var(--primary-border)] px-7 pb-3.5 pt-4 text-lg font-medium leading-tight hover:bg-[var(--primary-orange)] hover:text-white text-[var(--primary-p)] hover:border-none data-[twe-nav-active]:bg-[var(--primary-orange)] data-[twe-nav-active]:text-white data-[twe-nav-active]:border-none dark:bg-neutral-700 dark:text-white/50 dark:data-[twe-nav-active]:!bg-slate-900 dark:data-[twe-nav-active]:text-primary-500 md:me-4 duration-300"
+                            id="pills-coaching-tab" data-twe-toggle="pill" data-twe-target="#pills-coaching" role="tab"
+                            aria-controls="pills-coaching" aria-selected="true">Coaching</a>
+                    </li>
+                </ul>
 
-            <!--Pills content-->
-            <div class="mb-6">
-                <div class="hidden opacity-100 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block"
-                    id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" data-twe-tab-active>
-                    Tab 1 content
-                </div>
-                <div class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block"
-                    id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                    Tab 2 content
-                </div>
-                <div class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block"
-                    id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-                    Tab 3 content
+                <!--Pills content-->
+                <div class="mb-6">
+                    <!-- Pill 1 -->
+                    <div class="hidden opacity-100 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block border"
+                        id="pills-education" role="tabpanel" aria-labelledby="pills-education-tab" data-twe-tab-active>
+                        <div class="education grid grid-cols-12 gap-5">
+                            <div class="relative row-span-4 col-span-2 max-w-[300px]">
+                                <img src="./src/img/blog-2.png" alt="blog2" class="">
+                                <div
+                                    class="absolute top-0 left-0 w-9/10 h-9/10 bg-[var(--primary-orange)] opacity-80 text-white rounded-lg">
+                                    <h2>Exploring Minds Elementary Best School</h2>
+                                    <p>Dreamland Elementary</p>
+                                    <span><i class="fa fa-arrow-right"></i></span>
+                                </div>
+                            </div>
+                            <div class="row-span-4">
+                                <img src="./src/img/portfolio-2.png" class="">
+                            </div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                    <!-- Pill 2 -->
+                    <div class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block"
+                        id="pills-school" role="tabpanel" aria-labelledby="pills-school-tab">
+                        Tab 2 content
+                    </div>
+                    <!-- Pill 3 -->
+                    <div class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block"
+                        id="pills-learn" role="tabpanel" aria-labelledby="pills-learn-tab">
+                        Tab 3 content
+                    </div>
+                    <!-- Pill 4 -->
+                    <div class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block"
+                        id="pills-child" role="tabpanel" aria-labelledby="pills-child-tab">
+                        Tab 4 content
+                    </div>
+                    <!-- Pill 5 -->
+                    <div class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block"
+                        id="pills-coaching" role="tabpanel" aria-labelledby="pills-coaching-tab">
+                        Tab 5 content
+                    </div>
                 </div>
             </div>
+
         </div>
     </section>
     <section class="service">
@@ -557,25 +597,218 @@
         </div>
     </section>
     <section class="faq">
-        <div class="container">
+        <div class="container flex">
             <div class="img-block">
-                <img src="./src/img/banner-1.png" alt="faq">
+                <img src="./src/img/banner-1.png" alt="faq" class="scale-90 border flex-1/2">
             </div>
-            <div class="content">
-                <h3>Some Faq</h3>
-                <h1>Empowering Children Through Education Playful Mind</h1>
-                <div class="accordion">
-
+            <div class="content flex-1/2 border flex flex-col justify-center">
+                <h3 class="text-lg font-bold text-[var(--primary-cyan)]">Some Faq</h3>
+                <h1 class="text-3xl font-bold w-4/5">Empowering Children Through Education Playful Mind</h1>
+                <div class="accordion py-10">
+                    <div id="accordionExample">
+                        <div
+                            class="rounded-t-lg border border-neutral-200 bg-white dark:border-neutral-600 dark:bg-body-dark">
+                            <h2 class="mb-0" id="headingOne">
+                                <button
+                                    class="group relative flex w-full items-center rounded-t-lg border-0 bg-white px-5 py-4 text-left text-lg font-bold transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-body-dark dark:text-white [&:not([data-twe-collapse-collapsed])]:bg-white [&:not([data-twe-collapse-collapsed])]:shadow-border-b dark:[&:not([data-twe-collapse-collapsed])]:bg-surface-dark dark:[&:not([data-twe-collapse-collapsed])]:text-primary dark:[&:not([data-twe-collapse-collapsed])]:shadow-white/10 "
+                                    type="button" data-twe-collapse-init data-twe-target="#collapseOne"
+                                    aria-expanded="true" aria-controls="collapseOne">
+                                    Why do we have to go to shool?
+                                    <span
+                                        class="border -me-1 ms-auto h-10 w-10 rounded-lg shrink-0 rotate-[-180deg] transition-transform duration-200 ease-in-out group-data-[twe-collapse-collapsed]:me-0 group-data-[twe-collapse-collapsed]:bg-[var(--primary-orange)] motion-reduce:transition-none [&>svg]:h-6 [&>svg]:w-6">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                                        </svg>
+                                    </span>
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="!visible text-[var(--primary-p)] text-justify"
+                                data-twe-collapse-item data-twe-collapse-show aria-labelledby="headingOne"
+                                data-twe-parent="#accordionExample">
+                                <div class="px-5 py-4 text-[var(--primary-p)]">
+                                    It is a long established fact that a reader will be distracted by the read content
+                                    of a page when looking at its layout. Many desktop publish packages and web page
+                                    editors now use Loremdefault model
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="border border-t-0 border-neutral-200 bg-white dark:border-neutral-600 dark:bg-body-dark">
+                            <h2 class="mb-0" id="headingTwo">
+                                <button
+                                    class="group relative flex w-full items-center border-0 bg-white px-5 py-4 text-left text-lg font-bold transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-body-dark dark:text-white [&:not([data-twe-collapse-collapsed])]:bg-white [&:not([data-twe-collapse-collapsed])]:shadow-border-b dark:[&:not([data-twe-collapse-collapsed])]:bg-surface-dark dark:[&:not([data-twe-collapse-collapsed])]:text-primary dark:[&:not([data-twe-collapse-collapsed])]:shadow-white/10 "
+                                    type="button" data-twe-collapse-init data-twe-collapse-collapsed
+                                    data-twe-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Why do we have to go to shool?
+                                    <span
+                                        class="-me-1 ms-auto h-5 w-5 shrink-0 rotate-[-180deg] transition-transform duration-200 ease-in-out group-data-[twe-collapse-collapsed]:me-0 group-data-[twe-collapse-collapsed]:rotate-0 motion-reduce:transition-none [&>svg]:h-6 [&>svg]:w-6 ">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                                        </svg>
+                                    </span>
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="!visible hidden" data-twe-collapse-item
+                                aria-labelledby="headingTwo" data-twe-parent="#accordionExample">
+                                <div class="px-5 py-4 text-[var(--primary-p)]">
+                                    It is a long established fact that a reader will be distracted by the read content
+                                    of a page when looking at its layout. Many desktop publish packages and web page
+                                    editors now use Loremdefault model
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="rounded-b-lg border border-t-0 border-neutral-200 bg-white dark:border-neutral-600 dark:bg-body-dark">
+                            <h2 class="accordion-header mb-0" id="headingThree">
+                                <button
+                                    class="data-[twe-collapse-collapsed] group relative flex w-full items-center border-0 bg-white px-5 py-4 text-left text-lg font-bold transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none data-[twe-collapse-collapsed]:rounded-b-lg dark:bg-body-dark dark:text-white [&:not([data-twe-collapse-collapsed])]:bg-white [&:not([data-twe-collapse-collapsed])]:shadow-border-b dark:[&:not([data-twe-collapse-collapsed])]:bg-surface-dark dark:[&:not([data-twe-collapse-collapsed])]:text-primary  dark:[&:not([data-twe-collapse-collapsed])]:shadow-white/10"
+                                    type="button" data-twe-collapse-init data-twe-collapse-collapsed
+                                    data-twe-target="#collapseThree" aria-expanded="false"
+                                    aria-controls="collapseThree">
+                                    Why do we have to go to shool?
+                                    <span
+                                        class="-me-1 ms-auto h-5 w-5 shrink-0 rotate-[-180deg] transition-transform duration-200 ease-in-out group-data-[twe-collapse-collapsed]:me-0 group-data-[twe-collapse-collapsed]:rotate-0 motion-reduce:transition-none [&>svg]:h-6 [&>svg]:w-6">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                                        </svg>
+                                    </span>
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="!visible hidden" data-twe-collapse-item
+                                aria-labelledby="headingThree" data-twe-parent="#accordionExample">
+                                <div class="px-5 py-4">
+                                    It is a long established fact that a reader will be distracted by the read content
+                                    of a page when looking at its layout. Many desktop publish packages and web page
+                                    editors now use Loremdefault model
+                                </div>
+                            </div>
+                        </div>
+                        <!-- four -->
+                        <div
+                            class="rounded-t-lg border border-neutral-200 bg-white dark:border-neutral-600 dark:bg-body-dark">
+                            <h2 class="mb-0" id="headingFour">
+                                <button
+                                    class="group relative flex w-full items-center rounded-t-lg border-0 bg-white px-5 py-4 text-left text-lg font-bold transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-body-dark dark:text-white [&:not([data-twe-collapse-collapsed])]:bg-white [&:not([data-twe-collapse-collapsed])]:shadow-border-b dark:[&:not([data-twe-collapse-collapsed])]:bg-surface-dark dark:[&:not([data-twe-collapse-collapsed])]:text-primary dark:[&:not([data-twe-collapse-collapsed])]:shadow-white/10 "
+                                    type="button" data-twe-collapse-init data-twe-target="#collapseFour"
+                                    aria-expanded="true" aria-controls="collapseFour">
+                                    Why do we have to go to shool?
+                                    <span
+                                        class="border -me-1 ms-auto h-10 w-10 rounded-lg shrink-0 transition-transform ease-in-out bg-[var(--primary-cyan)] group-data-[twe-collapse-collapsed]:bg-[var(--primary-orange)] motion-reduce:transition-none [&>svg]:h-6 [&>svg]:w-6 duration-500">
+                                        <i class="fa fa-minus"></i>
+                                        <i class="fa fa-plus" aria-hidden="true"></i>
+                                    </span>
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="!visible text-[var(--primary-p)] text-justify"
+                                data-twe-collapse-item data-twe-collapse-show aria-labelledby="headingFour"
+                                data-twe-parent="#accordionExample">
+                                <div class="px-5 py-4 text-[var(--primary-p)]">
+                                    It is a long established fact that a reader will be distracted by the read content
+                                    of a page when looking at its layout. Many desktop publish packages and web page
+                                    editors now use Loremdefault model
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="professional">
+    <section class="professional py-20">
         <div class="container">
-            <h3>Meet Our Professional</h3>
-            <h1>Joyful Journeys Childcare and the Of a Education</h1>
-            <div class="professional-tags">
-
+            <h3 class="text-center text-lg font-bold text-[var(--primary-cyan)]">Meet Our Professional</h3>
+            <h1 class="text-center text-3xl font-bold">Joyful Journeys Childcare and the<br>Of a Education</h1>
+            <div class="professional-tags flex gap-7">
+                <div
+                    class="tag-item group border border-transparent shadow shadow-3xl hover:border hover:border-[var(--primary-green)] p-10 rounded-tl-[50px] rounded-tr-[10px] rounded-br-[50px] rounded-bl-[10px] duration-300">
+                    <img src="./src/img/professonal1.png" alt="professional1"
+                        class="rounded-tl-[50px] rounded-tr-[10px] rounded-br-[50px] rounded-bl-[10px] group-hover:rounded-tl-[10px] group-hover:rounded-tr-[50px] group-hover:rounded-br-[10px] group-hover:rounded-bl-[50px] duration-300">
+                    <div class="py-7">
+                        <h2 class="text-2xl font-bold">Jane Cooper</h2>
+                        <p class="text-[var(--primary-p)]">Marketing Coordinator</p>
+                    </div>
+                    <div class="relative flex items-center w-[200px] gap-4">
+                        <!-- Icon -->
+                        <span
+                            class="bg-[var(--primary-bgc)] cursor-pointer rounded-[5px] w-[35px] h-[35px] flex justify-center items-center duration-700 hover:bg-[var(--primary-pink)] hover:text-white">
+                            <i class="fab fa-facebook-f text-base dark:text-white"></i>
+                        </span>
+                        <span
+                            class="bg-[var(--primary-bgc)] cursor-pointer rounded-[5px] w-[35px] h-[35px] flex justify-center items-center duration-700 hover:bg-[var(--primary-pink)] hover:text-white">
+                            <i class="fa-brands fa-x-twitter text-base dark:text-white"></i>
+                        </span>
+                        <span
+                            class="bg-[var(--primary-bgc)] cursor-pointer rounded-[5px] w-[35px] h-[35px] flex justify-center items-center duration-700 hover:bg-[var(--primary-pink)] hover:text-white">
+                            <i class="fab fa-linkedin text-base dark:text-white"></i>
+                        </span>
+                        <span
+                            class="bg-[var(--primary-bgc)] cursor-pointer rounded-[5px] w-[35px] h-[35px] flex justify-center items-center duration-700 hover:bg-[var(--primary-pink)] hover:text-white">
+                            <i class="fab fa-pinterest-p text-base dark:text-white"></i>
+                        </span>
+                    </div>
+                </div>
+                <div
+                    class="tag-item group border border-transparent shadow shadow-3xl hover:border hover:border-[var(--primary-green)] p-10 rounded-tl-[50px] rounded-tr-[10px] rounded-br-[50px] rounded-bl-[10px] duration-300">
+                    <img src="./src/img/professonal2.png" alt="professional1"
+                        class="rounded-tl-[50px] rounded-tr-[10px] rounded-br-[50px] rounded-bl-[10px] group-hover:rounded-tl-[10px] group-hover:rounded-tr-[50px] group-hover:rounded-br-[10px] group-hover:rounded-bl-[50px] duration-300">
+                    <div class="py-7">
+                        <h2 class="text-2xl font-bold">Jane Cooper</h2>
+                        <p class="text-[var(--primary-p)]">Marketing Coordinator</p>
+                    </div>
+                    <div class="relative flex items-center w-[200px] gap-4">
+                        <!-- Icon -->
+                        <span
+                            class="bg-[var(--primary-bgc)] cursor-pointer rounded-[5px] w-[35px] h-[35px] flex justify-center items-center duration-700 hover:bg-[var(--primary-pink)] hover:text-white">
+                            <i class="fab fa-facebook-f text-base dark:text-white"></i>
+                        </span>
+                        <span
+                            class="bg-[var(--primary-bgc)] cursor-pointer rounded-[5px] w-[35px] h-[35px] flex justify-center items-center duration-700 hover:bg-[var(--primary-pink)] hover:text-white">
+                            <i class="fa-brands fa-x-twitter text-base dark:text-white"></i>
+                        </span>
+                        <span
+                            class="bg-[var(--primary-bgc)] cursor-pointer rounded-[5px] w-[35px] h-[35px] flex justify-center items-center duration-700 hover:bg-[var(--primary-pink)] hover:text-white">
+                            <i class="fab fa-linkedin text-base dark:text-white"></i>
+                        </span>
+                        <span
+                            class="bg-[var(--primary-bgc)] cursor-pointer rounded-[5px] w-[35px] h-[35px] flex justify-center items-center duration-700 hover:bg-[var(--primary-pink)] hover:text-white">
+                            <i class="fab fa-pinterest-p text-base dark:text-white"></i>
+                        </span>
+                    </div>
+                </div>
+                <div
+                    class="tag-item group border border-transparent shadow shadow-3xl hover:border hover:border-[var(--primary-green)] p-10 rounded-tl-[50px] rounded-tr-[10px] rounded-br-[50px] rounded-bl-[10px] duration-300">
+                    <img src="./src/img/professonal3.png" alt="professional1"
+                        class="rounded-tl-[50px] rounded-tr-[10px] rounded-br-[50px] rounded-bl-[10px] group-hover:rounded-tl-[10px] group-hover:rounded-tr-[50px] group-hover:rounded-br-[10px] group-hover:rounded-bl-[50px] duration-300">
+                    <div class="py-7">
+                        <h2 class="text-2xl font-bold">Jane Cooper</h2>
+                        <p class="text-[var(--primary-p)]">Marketing Coordinator</p>
+                    </div>
+                    <div class="relative flex items-center w-[200px] gap-4">
+                        <!-- Icon -->
+                        <span
+                            class="bg-[var(--primary-bgc)] cursor-pointer rounded-[5px] w-[35px] h-[35px] flex justify-center items-center duration-700 hover:bg-[var(--primary-pink)] hover:text-white">
+                            <i class="fab fa-facebook-f text-base dark:text-white"></i>
+                        </span>
+                        <span
+                            class="bg-[var(--primary-bgc)] cursor-pointer rounded-[5px] w-[35px] h-[35px] flex justify-center items-center duration-700 hover:bg-[var(--primary-pink)] hover:text-white">
+                            <i class="fa-brands fa-x-twitter text-base dark:text-white"></i>
+                        </span>
+                        <span
+                            class="bg-[var(--primary-bgc)] cursor-pointer rounded-[5px] w-[35px] h-[35px] flex justify-center items-center duration-700 hover:bg-[var(--primary-pink)] hover:text-white">
+                            <i class="fab fa-linkedin text-base dark:text-white"></i>
+                        </span>
+                        <span
+                            class="bg-[var(--primary-bgc)] cursor-pointer rounded-[5px] w-[35px] h-[35px] flex justify-center items-center duration-700 hover:bg-[var(--primary-pink)] hover:text-white">
+                            <i class="fab fa-pinterest-p text-base dark:text-white"></i>
+                        </span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
