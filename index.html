@@ -10,6 +10,8 @@
     <!-- font -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost">
+    <!-- Animation WOW -->
+    <link rel="stylesheet" href="css/animate.css">
     <!-- output css -->
     <link rel="stylesheet" href="./src/css/index.css">
     <!-- custom css -->
@@ -248,16 +250,19 @@
         </div>
     </header>
     <section class="banner bg-[var(--primary-bgc)]">
-        <div class="container border">
-            <div class="title-block flex justify-between items-center border border-red-500">
+        <div class="container">
+            <div class="title-block flex justify-between items-center">
                 <div class="relative">
-                   <img src="./src/img/boy_img_1.png" alt="boy1">
-                   <span class="absolute w-full h-full top-2 -left-2.5 rounded-full border-2 border-[var(--primary-orange)]"></span>
+                    <img src="./src/img/boy_img_1.png" alt="boy1">
+                    <span
+                        class="absolute w-full h-full top-2 -left-2.5 rounded-full border-2 border-[var(--primary-orange)]"></span>
                 </div>
                 <div class="title flex flex-col justify-around items-center">
                     <h1 class="font-[Jost] text-[70px]">Exploring Minds</h1>
-                    <h1 class="text-[70px] font-bold">Elementary <span class="text-[var(--primary-pink)]">School</span></h1>
-                    <p class="w-[400px] text-center text-[var(--primary-p)]">Starting a corporate business typically involves several steps, such as develo a business</p>
+                    <h1 class="text-[70px] font-bold">Elementary <span class="text-[var(--primary-pink)]">School</span>
+                    </h1>
+                    <p class="w-[400px] text-center text-[var(--primary-p)]">Starting a corporate business typically
+                        involves several steps, such as develo a business</p>
                     <div
                         class="banner-btn w-[150px] h-[60px] relative border cursor-pointer rounded-lg text-white font-normal bg-[var(--primary-green)] px-6 py-5 hover:[&_span]:w-full">
                         <div class="w-full h-full absolute top-0 left-0 flex justify-center items-center z-20">
@@ -267,27 +272,33 @@
                             class="w-0 h-full rounded-lg absolute top-0 left-0 bg-[var(--primary-cyan)] duration-500 overflow-hidden z-10"></span>
                     </div>
                 </div>
-                <div class="star-icon">
-                    <img src="./src/img/shap.png" alt="star1">
-                    <img src="./src/img/shap.png" alt="star2">
-                    <img src="./src/img/shap.png" alt="star3">
+                <div class="star-icon relative">
+                    <img src="./src/img/shap.png" alt="star1" class="relative">
+                    <img src="./src/img/shap.png" alt="star2" class="absolute -top-10 left-7 scale-50">
+                    <img src="./src/img/shap.png" alt="star3" class="absolute top-10 -left-7 scale-70">
                 </div>
             </div>
-            <div class="decor-block">
-                <img src="./src/img/painting.png" alt="painting">
-                <img src="./src/img/boy_img_2.png" alt="boy2">
+            <div class="decor-block relative pt-[70px]">
+                <img src="./src/img/painting.png" alt="painting" class="relative">
+                <div class="absolute -top-10 right-0">
+                    <img src="./src/img/boy_img_2.png" alt="boy2">
+                    <span
+                        class="absolute w-full h-full top-2 -left-2.5 rounded-full border-2 border-[var(--primary-cyan)]"></span>
+                </div>
+
             </div>
         </div>
     </section>
-    <section class="numberTalk">
-        <div class="container flex">
-            <div class="introduce flex-1/2">
-                <h3 class="">Number Talks</h3>
-                <h1>Invest in education invest<br>in the future</h1>
-                <p class="">Lorem ipsum dolor sit amet consectetur. Amet lectus mi ultricies dictum facilisis sem.
-                    Imperdiet
-                    massa turpis sit proin metus volutpat loren ipsum Lorem ipsum dolor sit amet consectetur. Amet
-                    lectus mi ultricies dictum</p>
+    <section class="numberTalk py-20">
+        <div class="container flex gap-10">
+            <div class="introduce flex-1/2 border">
+                <h3 class="text-lg font-bold text-[var(--primary-orange)]">Number Talks</h3>
+                <h1 class="text-3xl font-bold">Invest in education invest<br>in the future</h1>
+                <p class="text-base text-[var(--primary-p)] my-10">Lorem ipsum dolor sit amet consectetur. Amet lectus
+                    mi ultricies dictum facilisis sem. Imperdiet massa turpis sit proin metus volutpat loren ipsum Lorem
+                    ipsum dolor sit amet consectetur. Amet
+                    lectus mi ultricies dictum
+                </p>
                 <div
                     class="numberTalks-btn w-[150px] h-[60px] relative border border-[var(--primary-border)] cursor-pointer rounded-lg text-black font-normal bg-white px-6 py-5 hover:[&_span]:w-full hover:text-white duration-500">
                     <div class="w-full h-full absolute top-0 left-0 flex justify-center items-center z-20">
@@ -297,57 +308,75 @@
                         class="w-0 h-full rounded-lg absolute top-0 left-0 bg-[var(--primary-cyan)] duration-500 overflow-hidden z-10"></span>
                 </div>
             </div>
-            <div class="stats flex-1/2 grid grid-cols-2">
-                <div class="running border border-[var(--primary-border)] rounded-lg flex gap-2">
-                    <i class="fa fa-book-open bg-[var(--primary-orange)] rounded-full p-5 text-2xl text-white"></i>
+            <div class="stats border flex-1/2 grid grid-cols-2 gap-7">
+                <div
+                    class="running border border-[var(--primary-border)] rounded-lg flex gap-2 justify-start items-center p-6">
+                    <div class="w-20 h-20 flex justify-center items-center bg-[var(--primary-orange)] rounded-full">
+                        <i class="fa fa-book-open text-4xl text-white"></i>
+                    </div>
                     <div>
                         <h1 class="text-2xl font-bold">20K</h1>
-                        <p class="text-[var(--primary-p)]">Running Students</p>
+                        <p class="text-base text-[var(--primary-p)]">Running Students</p>
                     </div>
                 </div>
-                <div class="completed border border-[var(--primary-border)] rounded-lg flex gap-2">
-                    <i class="fa fa-book-open bg-[var(--primary-orange)] rounded-full p-5 text-2xl text-white"></i>
+                <div
+                    class="completed border border-[var(--primary-border)] rounded-lg flex gap-2 justify-start items-center p-6">
+                    <div class="w-20 h-20 flex justify-center items-center bg-[var(--primary-pink)] rounded-full">
+                        <i class="fa fa-book-open text-4xl text-white"></i>
+                    </div>
                     <div>
-                        <h1 class="text-2xl font-bold">20K</h1>
-                        <p class="text-[var(--primary-p)]">Running Students</p>
+                        <h1 class="text-2xl font-bold">13K</h1>
+                        <p class="text-base text-[var(--primary-p)]">Completed</p>
                     </div>
                 </div>
-                <div class="award border border-[var(--primary-border)] rounded-lg flex gap-2">
-                    <i class="fa fa-book-open bg-[var(--primary-orange)] rounded-full p-5 text-2xl text-white"></i>
+                <div
+                    class="award border border-[var(--primary-border)] rounded-lg flex gap-2 justify-start items-center p-6">
+                    <div class="w-20 h-20 flex justify-center items-center bg-[var(--primary-green)] rounded-full">
+                        <i class="fa fa-book-open text-4xl text-white"></i>
+                    </div>
                     <div>
-                        <h1 class="text-2xl font-bold">20K</h1>
-                        <p class="text-[var(--primary-p)]">Running Students</p>
+                        <h1 class="text-2xl font-bold">3K</h1>
+                        <p class="text-base text-[var(--primary-p)]">Award Winning</p>
                     </div>
                 </div>
-                <div class="guardian border border-[var(--primary-border)] rounded-lg flex gap-2">
-                    <i class="fa fa-book-open bg-[var(--primary-orange)] rounded-full p-5 text-2xl text-white"></i>
+                <div
+                    class="guardian border border-[var(--primary-border)] rounded-lg flex gap-2 justify-start items-center p-6">
+                    <div class="w-20 h-20 flex justify-center items-center bg-[var(--primary-cyan)] rounded-full">
+                        <i class="fa fa-book-open text-4xl text-white"></i>
+                    </div>
                     <div>
-                        <h1 class="text-2xl font-bold">20K</h1>
-                        <p class="text-[var(--primary-p)]">Running Students</p>
+                        <h1 class="text-2xl font-bold">13K</h1>
+                        <p class="text-base text-[var(--primary-p)]">Guardian Satishfaction</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="about">
-        <div class="container">
-            <div>
-                <img src="./src/img/shap-1.png" alt="decor2">
+    <section class="about py-20">
+        <div class="container flex gap-10">
+            <div class="flex-1/2 relative flex gap-7 items-end">
+                <img src="./src/img/shap-1.png" alt="decor2" class="absolute -top-10 -left-10">
                 <img src="./src/img/about-1.png" alt="about1">
-                <div>
-                    <img src="./src/img/icreement.png" alt="increement">
-                    <h3>Academy</h3>
-                    <p>Learning Ladder School</p>
+                <div class="flex flex-col gap-8">
+                    <div class="px-5 py-6 rounded-lg bg-[var(--primary-bgc)] flex flex-col justify-center items-center">
+                        <img src="./src/img/icreement.png" alt="increement">
+                        <h3 class="text-xl font-bold">Academy</h3>
+                        <p class="text-[var(--primary-p)]">Learning Ladder School</p>
+                    </div>
+                    <div class="px-5 py-6 rounded-lg drop-shadow-[0px_4.8px_24.4px_rgba(19,16,34,0.10)] bg-white">
+                        <h1 class="text-4xl font-bold text-[var(--primary-cyan)]">10+</h1>
+                        <p class="text-[var(--primary-p)]">Learning Ladder School</p>
+                    </div>
                 </div>
-                <div>
-                    <h1>10+</h1>
-                    <p>Learning Ladder School</p>
-                </div>
+
             </div>
-            <div class="text-block">
-                <h3>About Us</h3>
-                <h1>Unlocking Potential, One Child at a just Time in school</h1>
-                <p>Lorem ipsum dolor sit amet consectetur. Amet lectus mi ultricies dictum facilisis sem. Imperdiet
+            <div class="text-block flex-1/2">
+                <h3 class="text-lg font-bold text-[var(--primary-cyan)]">About Us</h3>
+                <h1 class="text-3xl font-bold w-2/3">Unlocking Potential, One Child at a just Time in school</h1>
+                <p class="w-2/3 text-base text-[var(--primary-p)] my-10">Lorem ipsum dolor sit amet consectetur. Amet
+                    lectus
+                    mi
+                    ultricies dictum facilisis sem. Imperdiet
                     massa turpis sit proin metus volutpat loren ipsum Lorem ipsum dolor sit amet consectetur. Amet
                     lectus mi ultricies dictum</p>
                 <div
@@ -361,106 +390,189 @@
             </div>
         </div>
     </section>
-    <section class="programs">
-        <div class="container">
-            <h3>Education Programs</h3>
-            <h1>Strong Foundation for Success For Nurturing Curiosityl</h1>
-            <div class="content">
-                <div class="online">
-                    <div class="text">
-                        <h2>Online Class</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit platea the ,osr of a proin mollis
-                            pretium facilisi in, ligula volutpat</p>
-                        <a href="#">Read More <i class="fa fa-arrow-right mx-2"></i></a>
+    <section class="programs py-20">
+        <div class="container relative">
+            <h3 class="text-center text-lg font-bold text-[var(--primary-green)]">Education Programs</h3>
+            <h1 class="text-center text-3xl font-bold">Strong Foundation for Success For<br>Nurturing Curiosityl</h1>
+            <div class="content grid grid-cols-2 gap-y-10 gap-x-20 my-20">
+                <div
+                    class="online group relative bg-white border border-[var(--primary-border)] rounded-lg hover:[&_h2]:text-[var(--primary-green)] hover:border-transparent hover:shadow-4 duration-300 flex items-center">
+                    <div class="text p-11">
+                        <div class="pl-10">
+                            <h2 class="text-2xl font-bold duration-300 hover:cursor-pointer">Online Class</h2>
+                            <p class="py-5 text-base text-[var(--primary-p)]">Lorem ipsum dolor sit amet consectetur
+                                adipiscing elit platea the ,osr of a
+                                proin mollis
+                                pretium facilisi in, ligula volutpat</p>
+                            <a href="#"
+                                class="hover:text-[var(--primary-green)] hover:[&_i]:translate-x-1 duration-400">Read
+                                More <i class="fa fa-arrow-right mx-2 duration-400"></i></a>
+                        </div>
                     </div>
-                    <div class="programIcon">
-
-                    </div>
-                </div>
-                <div class="formal">
-                    <div class="text">
-                        <h2>Online Class</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit platea the ,osr of a proin mollis
-                            pretium facilisi in, ligula volutpat</p>
-                        <a href="#">Read More <i class="fa fa-arrow-right mx-2"></i></a>
-                    </div>
-                    <div class="programIcon">
-
+                    <div
+                        class="programIcon absolute -translate-x-1/2 w-[90px] h-[90px] bg-white group-hover:bg-[var(--primary-green)] border border-[var(--primary-border)] rounded-lg flex justify-center items-center duration-300">
+                        <i
+                            class="fa fa-car-side text-5xl text-[var(--primary-green)] group-hover:text-white duration-300"></i>
                     </div>
                 </div>
-                <div class="preschool">
-                    <div class="text">
-                        <h2>Online Class</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit platea the ,osr of a proin mollis
-                            pretium facilisi in, ligula volutpat</p>
-                        <a href="#">Read More <i class="fa fa-arrow-right mx-2"></i></a>
+                <div
+                    class="formal group relative bg-white border border-[var(--primary-border)] rounded-lg hover:[&_h2]:text-[var(--primary-green)] hover:border-transparent hover:shadow-4 duration-300 flex items-center">
+                    <div class="text p-11">
+                        <div class="pl-10">
+                            <h2 class="text-2xl font-bold duration-300 hover:cursor-pointer">Formal Tuition</h2>
+                            <p class="py-5 text-base text-[var(--primary-p)]">Lorem ipsum dolor sit amet consectetur
+                                adipiscing elit platea the ,osr of a
+                                proin mollis
+                                pretium facilisi in, ligula volutpat</p>
+                            <a href="#"
+                                class="hover:text-[var(--primary-green)] hover:[&_i]:translate-x-1 duration-400">Read
+                                More <i class="fa fa-arrow-right mx-2 duration-400"></i></a>
+                        </div>
                     </div>
-                    <div class="programIcon">
-
+                    <div
+                        class="programIcon absolute -translate-x-1/2 w-[90px] h-[90px] bg-white group-hover:bg-[var(--primary-green)] border border-[var(--primary-border)] rounded-lg flex justify-center items-center duration-300">
+                        <i
+                            class="fa fa-car-side text-5xl text-[var(--primary-green)] group-hover:text-white duration-300"></i>
                     </div>
                 </div>
-                <div class="tuition">
-                    <div class="text">
-                        <h2>Online Class</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit platea the ,osr of a proin mollis
-                            pretium facilisi in, ligula volutpat</p>
-                        <a href="#">Read More <i class="fa fa-arrow-right mx-2"></i></a>
+                <div
+                    class="preschool group relative bg-white border border-[var(--primary-border)] rounded-lg hover:[&_h2]:text-[var(--primary-green)] hover:border-transparent hover:shadow-4 duration-300 flex items-center">
+                    <div class="text p-11">
+                        <div class="pl-10">
+                            <h2 class="text-2xl font-bold duration-300 hover:cursor-pointer">Preschool</h2>
+                            <p class="py-5 text-base text-[var(--primary-p)]">Lorem ipsum dolor sit amet consectetur
+                                adipiscing elit platea the ,osr of a
+                                proin mollis
+                                pretium facilisi in, ligula volutpat</p>
+                            <a href="#"
+                                class="hover:text-[var(--primary-green)] hover:[&_i]:translate-x-1 duration-400">Read
+                                More <i class="fa fa-arrow-right mx-2 duration-400"></i></a>
+                        </div>
                     </div>
-                    <div class="programIcon">
-
+                    <div
+                        class="programIcon absolute -translate-x-1/2 w-[90px] h-[90px] bg-white group-hover:bg-[var(--primary-green)] border border-[var(--primary-border)] rounded-lg flex justify-center items-center duration-300">
+                        <i
+                            class="fa fa-car-side text-5xl text-[var(--primary-green)] group-hover:text-white duration-300"></i>
+                    </div>
+                </div>
+                <div
+                    class="specialTuition group relative bg-white border border-[var(--primary-border)] rounded-lg hover:[&_h2]:text-[var(--primary-green)] hover:border-transparent hover:shadow-4 duration-300 flex items-center">
+                    <div class="text p-11">
+                        <div class="pl-10">
+                            <h2 class="text-2xl font-bold duration-300 hover:cursor-pointer">Secial Tuition</h2>
+                            <p class="py-5 text-base text-[var(--primary-p)]">Lorem ipsum dolor sit amet consectetur
+                                adipiscing elit platea the ,osr of a
+                                proin mollis
+                                pretium facilisi in, ligula volutpat</p>
+                            <a href="#"
+                                class="hover:text-[var(--primary-green)] hover:[&_i]:translate-x-1 duration-400">Read
+                                More <i class="fa fa-arrow-right mx-2 duration-400"></i></a>
+                        </div>
+                    </div>
+                    <div
+                        class="programIcon absolute -translate-x-1/2 w-[90px] h-[90px] bg-white group-hover:bg-[var(--primary-green)] border border-[var(--primary-border)] rounded-lg flex justify-center items-center duration-300">
+                        <i
+                            class="fa fa-car-side text-5xl text-[var(--primary-green)] group-hover:text-white duration-300"></i>
                     </div>
                 </div>
             </div>
+            <img src="./src/img/pencil-rocket.png" alt="pencil-rocket" class="absolute top-0 right-0 -z-10">
         </div>
     </section>
     <section class="portfolio">
         <div class="container">
-            <h3>Latest Portfolio</h3>
-            <h1>Exploring Minds Elementary School Education the only school</h1>
-            <!--Pills navigation-->
-            <ul class="mb-5 flex list-none flex-col flex-wrap ps-0 md:flex-row" id="pills-tab" role="tablist"
-                data-twe-nav-ref>
-                <li role="presentation">
-                    <a href="#pills-home"
-                        class="my-2 block rounded bg-zinc-100 px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-500 data-[twe-nav-active]:!bg-primary-100 data-[twe-nav-active]:text-primary-700 dark:bg-neutral-700 dark:text-white/50 dark:data-[twe-nav-active]:!bg-slate-900 dark:data-[twe-nav-active]:text-primary-500 md:me-4"
-                        id="pills-home-tab" data-twe-toggle="pill" data-twe-target="#pills-home" data-twe-nav-active
-                        role="tab" aria-controls="pills-home" aria-selected="true">Home</a>
-                </li>
-                <li role="presentation">
-                    <a href="#pills-profile"
-                        class="my-2 block rounded bg-zinc-100 px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-500 data-[twe-nav-active]:!bg-primary-100 data-[twe-nav-active]:text-primary-700 dark:bg-neutral-700 dark:text-white/50 dark:data-[twe-nav-active]:!bg-slate-900 dark:data-[twe-nav-active]:text-primary-500 md:me-4"
-                        id="pills-profile-tab" data-twe-toggle="pill" data-twe-target="#pills-profile" role="tab"
-                        aria-controls="pills-profile" aria-selected="false">Profile</a>
-                </li>
-                <li role="presentation">
-                    <a href="#pills-contact"
-                        class="my-2 block rounded bg-zinc-100 px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-500 data-[twe-nav-active]:!bg-primary-100 data-[twe-nav-active]:text-primary-700 dark:bg-neutral-700 dark:text-white/50 dark:data-[twe-nav-active]:!bg-slate-900 dark:data-[twe-nav-active]:text-primary-500 md:me-4"
-                        id="pills-contact-tab" data-twe-toggle="pill" data-twe-target="#pills-contact" role="tab"
-                        aria-controls="pills-contact" aria-selected="false">Contact</a>
-                </li>
-                <li role="presentation">
-                    <a href="#pills-disabled"
-                        class="pointer-events-none my-2 block rounded bg-zinc-200 px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-400 dark:bg-neutral-600 dark:text-neutral-500"
-                        id="pills-disabled-tab" data-twe-toggle="pill" data-twe-target="#pills-disabled" role="tab"
-                        aria-controls="pills-disabled" aria-selected="false">Disabled</a>
-                </li>
-            </ul>
+            <h3 class="text-center text-lg font-bold text-[var(--primary-cyan)]">Latest Portfolio</h3>
+            <h1 class="text-center text-3xl font-bold">Exploring Minds Elementary School<br>Education the only school
+            </h1>
+            <div class="pill-nav border">
+                <!--Pills navigation-->
+                <ul class="mb-5 flex list-none flex-col flex-wrap ps-0 md:flex-row justify-center gap-5" id="pills-tab"
+                    role="tablist" data-twe-nav-ref>
+                    <li role="presentation">
+                        <a href="#pills-education"
+                            class="my-2 block rounded-lg bg-white border border-[var(--primary-border)] px-7 pb-3.5 pt-4 text-lg font-medium leading-tight hover:bg-[var(--primary-orange)] hover:text-white text-[var(--primary-p)] hover:border-transparent data-[twe-nav-active]:bg-[var(--primary-orange)] data-[twe-nav-active]:text-white data-[twe-nav-active]:border-none dark:bg-neutral-700 dark:text-white/50 dark:data-[twe-nav-active]:!bg-slate-900 dark:data-[twe-nav-active]:text-primary-500 md:me-4 duration-500"
+                            id="pills-education-tab" data-twe-toggle="pill" data-twe-target="#pills-education"
+                            data-twe-nav-active role="tab" aria-controls="pills-education"
+                            aria-selected="true">Education</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#pills-school"
+                            class="my-2 block rounded-lg bg-white border border-[var(--primary-border)] px-7 pb-3.5 pt-4 text-lg font-medium leading-tight hover:bg-[var(--primary-orange)] hover:text-white text-[var(--primary-p)] hover:border-transparent data-[twe-nav-active]:bg-[var(--primary-orange)] data-[twe-nav-active]:text-white data-[twe-nav-active]:border-none dark:bg-neutral-700 dark:text-white/50 dark:data-[twe-nav-active]:!bg-slate-900 dark:data-[twe-nav-active]:text-primary-500 md:me-4 duration-500"
+                            id="pills-school-tab" data-twe-toggle="pill" data-twe-target="#pills-school" role="tab"
+                            aria-controls="pills-school" aria-selected="true">School</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#pills-learn"
+                            class="my-2 block rounded-lg bg-white border border-[var(--primary-border)] px-7 pb-3.5 pt-4 text-lg font-medium leading-tight hover:bg-[var(--primary-orange)] hover:text-white text-[var(--primary-p)] hover:border-transparent data-[twe-nav-active]:bg-[var(--primary-orange)] data-[twe-nav-active]:text-white data-[twe-nav-active]:border-none dark:bg-neutral-700 dark:text-white/50 dark:data-[twe-nav-active]:!bg-slate-900 dark:data-[twe-nav-active]:text-primary-500 md:me-4 duration-500"
+                            id="pills-learn-tab" data-twe-toggle="pill" data-twe-target="#pills-learn" role="tab"
+                            aria-controls="pills-learn" aria-selected="true">Learn</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#pills-child"
+                            class="my-2 block rounded-lg bg-white border border-[var(--primary-border)] px-7 pb-3.5 pt-4 text-lg font-medium leading-tight hover:bg-[var(--primary-orange)] hover:text-white text-[var(--primary-p)] hover:border-transparent data-[twe-nav-active]:bg-[var(--primary-orange)] data-[twe-nav-active]:text-white data-[twe-nav-active]:border-none dark:bg-neutral-700 dark:text-white/50 dark:data-[twe-nav-active]:!bg-slate-900 dark:data-[twe-nav-active]:text-primary-500 md:me-4 duration-500"
+                            id="pills-child-tab" data-twe-toggle="pill" data-twe-target="#pills-child" role="tab"
+                            aria-controls="pills-child" aria-selected="true">Child</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#pills-coaching"
+                            class="my-2 block rounded-lg bg-white border border-[var(--primary-border)] px-7 pb-3.5 pt-4 text-lg font-medium leading-tight hover:bg-[var(--primary-orange)] hover:text-white text-[var(--primary-p)] hover:border-transparent data-[twe-nav-active]:bg-[var(--primary-orange)] data-[twe-nav-active]:text-white data-[twe-nav-active]:border-none dark:bg-neutral-700 dark:text-white/50 dark:data-[twe-nav-active]:!bg-slate-900 dark:data-[twe-nav-active]:text-primary-500 md:me-4 duration-500"
+                            id="pills-coaching-tab" data-twe-toggle="pill" data-twe-target="#pills-coaching" role="tab"
+                            aria-controls="pills-coaching" aria-selected="true">Coaching</a>
+                    </li>
+                </ul>
 
-            <!--Pills content-->
-            <div class="mb-6">
-                <div class="hidden opacity-100 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block"
-                    id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" data-twe-tab-active>
-                    Tab 1 content
-                </div>
-                <div class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block"
-                    id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                    Tab 2 content
-                </div>
-                <div class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block"
-                    id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-                    Tab 3 content
+                <!--Pills content-->
+                <div class="mb-6">
+                    <!-- Pill 1 -->
+                    <div class="hidden opacity-100 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block border"
+                        id="pills-education" role="tabpanel" aria-labelledby="pills-education-tab" data-twe-tab-active>
+                        <div class="education grid grid-cols-12 gap-7.5">
+                            <div class="col-span-4 row-span-2">
+                                <img src="./src/img/portfolio-1.png" class="">
+                                <!-- <div
+                                    class="absolute top-0 left-0 w-9/10 h-9/10 bg-[var(--primary-orange)] opacity-80 text-white rounded-lg">
+                                    <h2>Exploring Minds Elementary Best School</h2>
+                                    <p>Dreamland Elementary</p>
+                                    <span><i class="fa fa-arrow-right"></i></span>
+                                </div> -->
+                            </div>
+                            <div class="col-start-5 col-span-5">
+                                <img src="./src/img/portfolio-2.png" class="">
+                            </div>
+                            <div class="col-start-10 col-span-3">
+                                <img src="./src/img/portfolio-3.png">
+                            </div>
+                            <div class="col-start-5 col-span-4 row-start-2">
+                                <img src="./src/img/portfolio-5.png">
+                            </div>
+                            <div class="col-start-9 col-span-4 row-start-2">
+                                <img src="./src/img/portfolio-6.png">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Pill 2 -->
+                    <div class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block"
+                        id="pills-school" role="tabpanel" aria-labelledby="pills-school-tab">
+                        Tab 2 content
+                    </div>
+                    <!-- Pill 3 -->
+                    <div class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block"
+                        id="pills-learn" role="tabpanel" aria-labelledby="pills-learn-tab">
+                        Tab 3 content
+                    </div>
+                    <!-- Pill 4 -->
+                    <div class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block"
+                        id="pills-child" role="tabpanel" aria-labelledby="pills-child-tab">
+                        Tab 4 content
+                    </div>
+                    <!-- Pill 5 -->
+                    <div class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block"
+                        id="pills-coaching" role="tabpanel" aria-labelledby="pills-coaching-tab">
+                        Tab 5 content
+                    </div>
                 </div>
             </div>
+
         </div>
     </section>
     <section class="service">
@@ -491,34 +603,210 @@
         </div>
     </section>
     <section class="faq">
-        <div class="container">
+        <div class="container flex">
             <div class="img-block">
-                <img src="./src/img/banner-1.png" alt="faq">
+                <img src="./src/img/banner-1.png" alt="faq" class="scale-90 flex-1/2">
             </div>
-            <div class="content">
-                <h3>Some Faq</h3>
-                <h1>Empowering Children Through Education Playful Mind</h1>
-                <div class="accordion">
-
+            <div class="content flex-1/2 flex flex-col justify-center">
+                <h3 class="text-lg font-bold text-[var(--primary-cyan)]">Some Faq</h3>
+                <h1 class="text-3xl font-bold w-4/5">Empowering Children Through Education Playful Mind</h1>
+                <div class="accordion py-10">
+                    <div id="accordionExample">
+                        <div
+                            class="mt-10 rounded-lg border border-[var(--primary-border)] bg-white dark:border-neutral-600 dark:bg-body-dark">
+                            <h2 class="mb-0" id="headingOne">
+                                <button
+                                    class="rounded-lg border-hidden group relative flex justify-between w-full items-center cursor-pointer bg-white px-5 py-4 text-left text-lg font-bold transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-body-dark dark:text-white [&:not([data-twe-collapse-collapsed])]:bg-white dark:[&:not([data-twe-collapse-collapsed])]:bg-surface-dark dark:[&:not([data-twe-collapse-collapsed])]:text-primary dark:[&:not([data-twe-collapse-collapsed])]:shadow-white/10 "
+                                    type="button" data-twe-collapse-init data-twe-target="#collapseOne"
+                                    aria-expanded="true" aria-controls="collapseOne">
+                                    Why do we have to go to shool?
+                                    <div class="group relative">
+                                        <div
+                                            class="absolute top-0 left-0 opacity-0 group-data-[twe-collapse-collapsed]:opacity-100 w-10 h-10 rounded-lg bg-[var(--primary-orange)] flex justify-center items-center duration-500">
+                                            <i class="fa fa-plus text-white"></i>
+                                        </div>
+                                        <div
+                                            class="w-10 h-10 rounded-lg bg-[var(--primary-cyan)] flex justify-center items-center">
+                                            <i class="fa fa-minus text-white"></i>
+                                        </div>
+                                    </div>
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="!visible text-[var(--primary-p)] text-justify"
+                                data-twe-collapse-item data-twe-collapse-show aria-labelledby="headingOne"
+                                data-twe-parent="#accordionExample">
+                                <div class="px-5 py-4 text-[var(--primary-p)]">
+                                    It is a long established fact that a reader will be distracted by the read content
+                                    of a page when looking at its layout. Many desktop publish packages and web page
+                                    editors now use Loremdefault model
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="mt-10 rounded-lg border border-[var(--primary-border)] bg-white dark:border-neutral-600 dark:bg-body-dark">
+                            <h2 class="mb-0" id="headingTwo">
+                                <button
+                                    class="rounded-lg border-hidden group relative flex justify-between w-full items-center cursor-pointer bg-white px-5 py-4 text-left text-lg font-bold transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-body-dark dark:text-white [&:not([data-twe-collapse-collapsed])]:bg-white dark:[&:not([data-twe-collapse-collapsed])]:bg-surface-dark dark:[&:not([data-twe-collapse-collapsed])]:text-primary dark:[&:not([data-twe-collapse-collapsed])]:shadow-white/10 "
+                                    type="button" data-twe-collapse-init data-twe-target="#collapseTwo"
+                                    aria-expanded="false" aria-controls="collapseTwo">
+                                    Why do we have to go to shool?
+                                    <div class="group relative">
+                                        <div
+                                            class="absolute top-0 left-0 opacity-0 group-data-[twe-collapse-collapsed]:opacity-100 w-10 h-10 rounded-lg bg-[var(--primary-orange)] flex justify-center items-center duration-500">
+                                            <i class="fa fa-plus text-white"></i>
+                                        </div>
+                                        <div
+                                            class="w-10 h-10 rounded-lg bg-[var(--primary-cyan)] flex justify-center items-center">
+                                            <i class="fa fa-minus text-white"></i>
+                                        </div>
+                                    </div>
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="!visible hidden text-[var(--primary-p)] text-justify"
+                                data-twe-collapse-item data-twe-collapse-show aria-labelledby="headingTwo"
+                                data-twe-parent="#accordionExample">
+                                <div class="px-5 py-4 text-[var(--primary-p)]">
+                                    It is a long established fact that a reader will be distracted by the read content
+                                    of a page when looking at its layout. Many desktop publish packages and web page
+                                    editors now use Loremdefault model
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="mt-10 rounded-lg border border-[var(--primary-border)] bg-white dark:border-neutral-600 dark:bg-body-dark">
+                            <h2 class="mb-0" id="headingThree">
+                                <button
+                                    class="rounded-lg border-hidden group relative flex justify-between w-full items-center cursor-pointer bg-white px-5 py-4 text-left text-lg font-bold transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-body-dark dark:text-white [&:not([data-twe-collapse-collapsed])]:bg-white dark:[&:not([data-twe-collapse-collapsed])]:bg-surface-dark dark:[&:not([data-twe-collapse-collapsed])]:text-primary dark:[&:not([data-twe-collapse-collapsed])]:shadow-white/10 "
+                                    type="button" data-twe-collapse-init data-twe-target="#collapseThree"
+                                    aria-expanded="false" aria-controls="collapseThree">
+                                    Why do we have to go to shool?
+                                    <div class="group relative">
+                                        <div
+                                            class="absolute top-0 left-0 opacity-0 group-data-[twe-collapse-collapsed]:opacity-100 w-10 h-10 rounded-lg bg-[var(--primary-orange)] flex justify-center items-center duration-500">
+                                            <i class="fa fa-plus text-white"></i>
+                                        </div>
+                                        <div
+                                            class="w-10 h-10 rounded-lg bg-[var(--primary-cyan)] flex justify-center items-center">
+                                            <i class="fa fa-minus text-white"></i>
+                                        </div>
+                                    </div>
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="!visible hidden text-[var(--primary-p)] text-justify"
+                                data-twe-collapse-item data-twe-collapse-show aria-labelledby="headingThree"
+                                data-twe-parent="#accordionExample">
+                                <div class="px-5 py-4 text-[var(--primary-p)]">
+                                    It is a long established fact that a reader will be distracted by the read content
+                                    of a page when looking at its layout. Many desktop publish packages and web page
+                                    editors now use Loremdefault model
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="professional">
+    <section class="professional py-20">
         <div class="container">
-            <h3>Meet Our Professional</h3>
-            <h1>Joyful Journeys Childcare and the Of a Education</h1>
-            <div class="professional-tags">
-
+            <h3 class="text-center text-lg font-bold text-[var(--primary-cyan)]">Meet Our Professional</h3>
+            <h1 class="text-center text-3xl font-bold">Joyful Journeys Childcare and the<br>Of a Education</h1>
+            <div class="professional-tags flex gap-7 pt-20">
+                <div
+                    class="tag-item group border border-transparent shadow shadow-3xl hover:border hover:border-[var(--primary-green)] p-10 rounded-tl-[50px] rounded-tr-[10px] rounded-br-[50px] rounded-bl-[10px] duration-300">
+                    <img src="./src/img/professonal1.png" alt="professional1"
+                        class="rounded-tl-[50px] rounded-tr-[10px] rounded-br-[50px] rounded-bl-[10px] group-hover:rounded-tl-[10px] group-hover:rounded-tr-[50px] group-hover:rounded-br-[10px] group-hover:rounded-bl-[50px] duration-300">
+                    <div class="py-7">
+                        <h2 class="text-2xl font-bold">Jane Cooper</h2>
+                        <p class="text-[var(--primary-p)]">Marketing Coordinator</p>
+                    </div>
+                    <div class="relative flex items-center w-[200px] gap-4">
+                        <!-- Icon -->
+                        <span
+                            class="bg-[var(--primary-bgc)] cursor-pointer rounded-[5px] w-[35px] h-[35px] flex justify-center items-center duration-700 hover:bg-[var(--primary-pink)] hover:text-white">
+                            <i class="fab fa-facebook-f text-base dark:text-white"></i>
+                        </span>
+                        <span
+                            class="bg-[var(--primary-bgc)] cursor-pointer rounded-[5px] w-[35px] h-[35px] flex justify-center items-center duration-700 hover:bg-[var(--primary-pink)] hover:text-white">
+                            <i class="fa-brands fa-x-twitter text-base dark:text-white"></i>
+                        </span>
+                        <span
+                            class="bg-[var(--primary-bgc)] cursor-pointer rounded-[5px] w-[35px] h-[35px] flex justify-center items-center duration-700 hover:bg-[var(--primary-pink)] hover:text-white">
+                            <i class="fab fa-linkedin text-base dark:text-white"></i>
+                        </span>
+                        <span
+                            class="bg-[var(--primary-bgc)] cursor-pointer rounded-[5px] w-[35px] h-[35px] flex justify-center items-center duration-700 hover:bg-[var(--primary-pink)] hover:text-white">
+                            <i class="fab fa-pinterest-p text-base dark:text-white"></i>
+                        </span>
+                    </div>
+                </div>
+                <div
+                    class="tag-item group border border-transparent shadow shadow-3xl hover:border hover:border-[var(--primary-green)] p-10 rounded-tl-[50px] rounded-tr-[10px] rounded-br-[50px] rounded-bl-[10px] duration-300">
+                    <img src="./src/img/professonal2.png" alt="professional1"
+                        class="rounded-tl-[50px] rounded-tr-[10px] rounded-br-[50px] rounded-bl-[10px] group-hover:rounded-tl-[10px] group-hover:rounded-tr-[50px] group-hover:rounded-br-[10px] group-hover:rounded-bl-[50px] duration-300">
+                    <div class="py-7">
+                        <h2 class="text-2xl font-bold">Jane Cooper</h2>
+                        <p class="text-[var(--primary-p)]">Marketing Coordinator</p>
+                    </div>
+                    <div class="relative flex items-center w-[200px] gap-4">
+                        <!-- Icon -->
+                        <span
+                            class="bg-[var(--primary-bgc)] cursor-pointer rounded-[5px] w-[35px] h-[35px] flex justify-center items-center duration-700 hover:bg-[var(--primary-pink)] hover:text-white">
+                            <i class="fab fa-facebook-f text-base dark:text-white"></i>
+                        </span>
+                        <span
+                            class="bg-[var(--primary-bgc)] cursor-pointer rounded-[5px] w-[35px] h-[35px] flex justify-center items-center duration-700 hover:bg-[var(--primary-pink)] hover:text-white">
+                            <i class="fa-brands fa-x-twitter text-base dark:text-white"></i>
+                        </span>
+                        <span
+                            class="bg-[var(--primary-bgc)] cursor-pointer rounded-[5px] w-[35px] h-[35px] flex justify-center items-center duration-700 hover:bg-[var(--primary-pink)] hover:text-white">
+                            <i class="fab fa-linkedin text-base dark:text-white"></i>
+                        </span>
+                        <span
+                            class="bg-[var(--primary-bgc)] cursor-pointer rounded-[5px] w-[35px] h-[35px] flex justify-center items-center duration-700 hover:bg-[var(--primary-pink)] hover:text-white">
+                            <i class="fab fa-pinterest-p text-base dark:text-white"></i>
+                        </span>
+                    </div>
+                </div>
+                <div
+                    class="tag-item group border border-transparent shadow shadow-3xl hover:border hover:border-[var(--primary-green)] p-10 rounded-tl-[50px] rounded-tr-[10px] rounded-br-[50px] rounded-bl-[10px] duration-300">
+                    <img src="./src/img/professonal3.png" alt="professional1"
+                        class="rounded-tl-[50px] rounded-tr-[10px] rounded-br-[50px] rounded-bl-[10px] group-hover:rounded-tl-[10px] group-hover:rounded-tr-[50px] group-hover:rounded-br-[10px] group-hover:rounded-bl-[50px] duration-300">
+                    <div class="py-7">
+                        <h2 class="text-2xl font-bold">Jane Cooper</h2>
+                        <p class="text-[var(--primary-p)]">Marketing Coordinator</p>
+                    </div>
+                    <div class="relative flex items-center w-[200px] gap-4">
+                        <!-- Icon -->
+                        <span
+                            class="bg-[var(--primary-bgc)] cursor-pointer rounded-[5px] w-[35px] h-[35px] flex justify-center items-center duration-700 hover:bg-[var(--primary-pink)] hover:text-white">
+                            <i class="fab fa-facebook-f text-base dark:text-white"></i>
+                        </span>
+                        <span
+                            class="bg-[var(--primary-bgc)] cursor-pointer rounded-[5px] w-[35px] h-[35px] flex justify-center items-center duration-700 hover:bg-[var(--primary-pink)] hover:text-white">
+                            <i class="fa-brands fa-x-twitter text-base dark:text-white"></i>
+                        </span>
+                        <span
+                            class="bg-[var(--primary-bgc)] cursor-pointer rounded-[5px] w-[35px] h-[35px] flex justify-center items-center duration-700 hover:bg-[var(--primary-pink)] hover:text-white">
+                            <i class="fab fa-linkedin text-base dark:text-white"></i>
+                        </span>
+                        <span
+                            class="bg-[var(--primary-bgc)] cursor-pointer rounded-[5px] w-[35px] h-[35px] flex justify-center items-center duration-700 hover:bg-[var(--primary-pink)] hover:text-white">
+                            <i class="fab fa-pinterest-p text-base dark:text-white"></i>
+                        </span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <section class="knowledge bg-[var(--primary-bgc)]">
-        <div class="container">
-            <div class="text-block">
-                <h3>Student knowledge</h3>
-                <h1>Knowledge for All learn design Excellence for Everyone</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit platea the osr of a proin mollis pretium
+    <section class="knowledge bg-[var(--primary-bgc)] pt-[100px] relative">
+        <div class="container flex items-center relative pb-[100px] gap-8">
+            <div class="text-block flex-4/10 pl-5">
+                <h3 class="text-lg font-bold text-[var(--primary-cyan)]">Student knowledge</h3>
+                <h1 class="text-3xl font-bold w-7/10">Knowledge for All learn design Excellence for Everyone</h1>
+                <p class="text-[var(--primary-p)] my-7">Lorem ipsum dolor sit amet consectetur adipiscing elit platea
+                    the osr
+                    of a proin mollis pretium
                     facilisi in, ligula volutpat</p>
                 <div
                     class="header-btn w-[150px] h-[60px] relative border cursor-pointer rounded-full text-white font-normal bg-[var(--primary-pink)] px-6 py-5 hover:bg-white hover:text-[var(--primary-pink)] duration-500">
@@ -527,99 +815,244 @@
                     </div>
                 </div>
             </div>
-            <div class="decor-block">
-                <div>
-                    <div>
-                        <h1>1-2<br>Years</h1>
+            <div class="decor-block flex-6/10 flex gap-7 justify-center items-center">
+                <div class="flex flex-col justify-end items-end gap-7 pt-20">
+                    <div
+                        class="w-[250px] h-[180px] bg-[#0A6375] rounded-xl flex justify-center items-center text-white">
+                        <h1 class="text-2xl font-bold text-center">1-2<br>Years</h1>
                     </div>
-                    <div>
-                        <h1>9-11<br>Years</h1>
+                    <div
+                        class="w-[180px] h-[150px] bg-[var(--primary-orange)] rounded-xl flex justify-center items-center text-white">
+                        <h1 class="text-2xl font-bold text-center">
+                            9-11<br>Years</h1>
                     </div>
                 </div>
-                <div class="grid">
-                    <div>
-                        <h1>3-5<br>Years</h1>
+                <div class="grid grid-cols-2 gap-7">
+                    <div
+                        class="w-[180px] h-[150px] bg-[var(--primary-cyan)] rounded-xl flex justify-center items-center text-white">
+                        <h1 class="text-2xl font-bold text-center">3-5<br>Years</h1>
                     </div>
-                    <div>
-                        <h1>6-8<br>Years</h1>
+                    <div
+                        class="w-[180px] h-[150px] bg-[var(--primary-pink)] rounded-xl flex justify-center items-center text-white row-start-2">
+                        <h1 class="text-2xl font-bold text-center">6-8<br>Years</h1>
                     </div>
-                    <div>
-                        <h1>12-15<br>Years</h1>
+                    <div
+                        class="w-[180px] h-[150px] bg-[var(--primary-orange)] rounded-xl flex justify-center items-center text-white col-start-2 row-start-2 col-span-1">
+                        <h1 class="text-2xl font-bold text-center">12-15<br>Years</h1>
                     </div>
-                    <div>
-                        <h1>16-18<br>Years</h1>
+                    <div
+                        class="w-[180px] h-[150px] bg-[var(--primary-green)] rounded-xl flex justify-center items-center text-white row-start-3">
+                        <h1 class="text-2xl font-bold text-center">16-18<br>Years</h1>
                     </div>
                 </div>
             </div>
         </div>
+        <img src="./src/img/knowledge-lshpe.png" alt="tree" class="absolute bottom-0 left-0">
+        <img src="./src/img/knowledge-animal.png" alt="turtle" class="absolute top-0 right-0 scale-80">
     </section>
-    <section class="testimonial">
+    <section class="testimonial py-20">
         <div class="container">
-            <div class="title-block">
-                <div>
-                    <h3>Clients Testimonial</h3>
-                    <h1>Unlocking the Power of Wonderworks Child</h1>
+            <div class="title-block flex justify-between my-[50px]">
+                <div class="max-w-[400px]">
+                    <h3 class="text-lg font-bold text-[var(--primary-cyan)]">Clients Testimonial</h3>
+                    <h1 class="text-3xl font-bold">Unlocking the Power of Wonderworks Child</h1>
                 </div>
-                <p>Use receiving accounts a number a currencies and get paid like a local Use receivin accounts a number
+                <p class="w-[400px] text-[var(--primary-p)]">Use receiving accounts a number a currencies and get paid
+                    like a local Use receivin
+                    accounts a number
                     paid the most beautiful think</p>
             </div>
             <div class="content">
-                <img src="" alt="">
+                <img src="./src/img/children.png" alt="">
                 <div class="testimonial-carusel">
 
                 </div>
             </div>
         </div>
     </section>
-    <section class="blog bg-[var(--primary-bgc)]">
+    <section class="blog bg-[linear-gradient(180deg,_#FFF0E5_0%,_rgba(255,_240,_229,_0.00)_100%)] py-20">
         <div class="container">
-            <h3>Latest Blog And News</h3>
-            <h1>Wonderworks Child Development Center Discovery Kids Preschool</h1>
-            <div class="grid">
-                <div>
-                    <!-- Card TW element -->
+            <h3 class="text-base font-bold text-[var(--primary-cyan)]">Latest Blog And News</h3>
+            <h1 class="text-3xl font-bold w-1/2">Wonderworks Child Development Center Discovery Kids Preschool</h1>
+            <div class="grid grid-cols-2 gap-7">
+                <div
+                    class="flex p-3 bg-white rounded-lg gap-5 items-center drop-shadow-[0px_4.8px_24.4px_rgba(19,16,34,0.10)]">
+                    <img src="./src/img/blog-1.png">
+                    <div>
+                        <div class="flex gap-5">
+                            <span>
+                                <i class="fa fa-calendar-alt text-[var(--primary-cyan)]"></i>
+                                <p class="inline-block text-[var(--primary-p)]">October 19, 2023</p>
+                            </span>
+                            <span>
+                                <i class="fa fa-user text-[var(--primary-cyan)]"></i>
+                                <p class="inline-block text-[var(--primary-p)]">By admin</p>
+                            </span>
+                        </div>
+                        <h3
+                            class="text-2xl font-bold my-6 hover:text-[var(--primary-cyan)] duration-300 cursor-pointer">
+                            Empowering Children Through Education the a Igniting</h3>
+                        <p class="hover:[&_i]:translate-x-2 cursor-pointer hover:text-[var(--primary-cyan)]">Read More
+                            <i class="fa fa-arrow-right mx-2 duration-500"></i>
+                        </p>
+                    </div>
+                </div>
+                <div
+                    class="bg-white rounded-lg gap-5 items-center col-start-2 row-span-2 drop-shadow-[0px_4.8px_24.4px_rgba(19,16,34,0.10)]">
+                    <img src="./src/img/blog-3.png">
+                    <div class="py-6 pl-10">
+                        <div class="flex gap-5">
+                            <span>
+                                <i class="fa fa-calendar-alt text-[var(--primary-cyan)]"></i>
+                                <p class="inline-block text-[var(--primary-p)]">October 19, 2023</p>
+                            </span>
+                            <span>
+                                <i class="fa fa-user text-[var(--primary-cyan)]"></i>
+                                <p class="inline-block text-[var(--primary-p)]">By admin</p>
+                            </span>
+                        </div>
+                        <h3
+                            class="text-2xl font-bold my-6 w-9/10 hover:text-[var(--primary-cyan)] duration-300 cursor-pointer">
+                            Empowering Children Through Education the a Igniting</h3>
+                        <p class="hover:[&_i]:translate-x-2 cursor-pointer hover:text-[var(--primary-cyan)]">Read More
+                            <i class="fa fa-arrow-right mx-2 duration-500"></i>
+                        </p>
+                    </div>
+                </div>
+                <div
+                    class="flex p-3 bg-white rounded-lg gap-5 items-center drop-shadow-[0px_4.8px_24.4px_rgba(19,16,34,0.10)]">
+                    <img src="./src/img/blog-2.png">
+                    <div class="">
+                        <div class="flex gap-5">
+                            <span>
+                                <i class="fa fa-calendar-alt text-[var(--primary-cyan)]"></i>
+                                <p class="inline-block text-[var(--primary-p)]">October 19, 2023</p>
+                            </span>
+                            <span>
+                                <i class="fa fa-user text-[var(--primary-cyan)]"></i>
+                                <p class="inline-block text-[var(--primary-p)]">By admin</p>
+                            </span>
+                        </div>
+                        <h3
+                            class="text-2xl font-bold my-6 w-9/10 hover:text-[var(--primary-cyan)] duration-300 cursor-pointer">
+                            Empowering Children Through Education the a Igniting</h3>
+                        <p class="hover:[&_i]:translate-x-2 cursor-pointer hover:text-[var(--primary-cyan)]">Read More
+                            <i class="fa fa-arrow-right mx-2 duration-500"></i>
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="connect bg-[url(/src/img/bg-img.png)]">
-        <div class="container">
-            <div>
-                <img src="./src/img/egg-shap.png">
-                <img src="./src/img/student.png" alt="student">
-            </div>
-            <div>
-                <h3>Get Connected</h3>
-                <h1>Education That Sparks Imaginat Nuturing Curiosity Inspire</h1>
-                <form action="#">
-                    <input type="email" placeholder="Enter Your Email">
-                    <div
-                        class="header-btn w-[150px] h-[60px] relative border cursor-pointer rounded-lg text-white font-normal bg-[var(--primary-orange)] px-6 py-5 hover:[&_span]:w-full">
-                        <div class="w-full h-full absolute top-0 left-0 flex justify-center items-center z-20"
-                            type="Submit">
-                            <p>Submit</p><i class="fa fa-arrow-right mx-2"></i>
+    <section class="connect bg-[linear-gradient(180deg,_rgba(238,255,200,0.00)_0%,_#E9FFB6_100%)]">
+        <div class="bg-[url(/src/img/bg-img.png)] bg-no-repeat bg-contain bg-bottom">
+            <div class="container flex items-center justify-between">
+                <div class="bg-[url(/src/img/egg-shap.png)] bg-contain bg-no-repeat bg-bottom w-[600px]">
+                    <img src="./src/img/student.png" alt="student" class="mx-auto">
+                </div>
+                <div class="w-[530px]">
+                    <h3 class="text-base font-bold">Get Connected</h3>
+                    <h1 class="text-3xl font-bold">Education That Sparks Imaginat Nuturing Curiosity Inspire</h1>
+                    <form action="#" class="my-10 relative">
+                        <input type="email" placeholder="Enter Your Email"
+                            class="border rounded-lg w-full h-20 bg-white pl-6">
+                        <div class="absolute top-1/2 right-2 -translate-y-1/2">
+                            <div
+                                class="header-btn w-[150px] h-[60px] relative border rounded-lg text-white font-normal bg-[var(--primary-orange)] px-6 py-5 hover:[&_span]:w-full">
+                                <div class="w-full h-full absolute top-0 left-0 flex cursor-pointer justify-center items-center z-20"
+                                    type="Submit">
+                                    <p>Submit</p><i class="fa fa-arrow-right mx-2"></i>
+                                </div>
+                                <span
+                                    class="w-0 h-full rounded-lg absolute top-0 left-0 bg-[var(--primary-cyan)] duration-500 overflow-hidden z-10"></span>
+                            </div>
                         </div>
-                        <span
-                            class="w-0 h-full rounded-lg absolute top-0 left-0 bg-[var(--primary-cyan)] duration-500 overflow-hidden z-10"></span>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="externalLinks py-20">
+        <div class="container flex justify-between gap-10">
+            <div class="social w-1/3">
+                <div class="logo flex items-center gap-1 cursor-pointer">
+                    <img src="./src/img/logo.png" alt="logo">
+                    <h1 class="text-3xl font-bold">Ascent</h1>
+                </div>
+                <p class="text-[var(--primary-p)] my-5">Yes, there are many notable ma corporate the a od businesses
+                    Informati worldwide</p>
+                <div class="relative flex items-center w-[200px] gap-4">
+                    <!-- Icon -->
+                    <span
+                        class="bg-[var(--primary-bgc)] cursor-pointer rounded-[5px] w-[35px] h-[35px] flex justify-center items-center duration-700 hover:bg-[var(--primary-green)] hover:text-white">
+                        <i class="fab fa-facebook-f text-base dark:text-white"></i>
+                    </span>
+                    <span
+                        class="bg-[var(--primary-bgc)] cursor-pointer rounded-[5px] w-[35px] h-[35px] flex justify-center items-center duration-700 hover:bg-[var(--primary-green)] hover:text-white">
+                        <i class="fa-brands fa-x-twitter text-base dark:text-white"></i>
+                    </span>
+                    <span
+                        class="bg-[var(--primary-bgc)] cursor-pointer rounded-[5px] w-[35px] h-[35px] flex justify-center items-center duration-700 hover:bg-[var(--primary-green)] hover:text-white">
+                        <i class="fab fa-linkedin text-base dark:text-white"></i>
+                    </span>
+                    <span
+                        class="bg-[var(--primary-bgc)] cursor-pointer rounded-[5px] w-[35px] h-[35px] flex justify-center items-center duration-700 hover:bg-[var(--primary-green)] hover:text-white">
+                        <i class="fab fa-pinterest-p text-base dark:text-white"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="pages">
+                <h1 class="text-2xl font-bold">Pages</h1>
+                <ul class="flex flex-col gap-4 pt-5">
+                    <li class="hover:translate-x-1 duration-500"><a href="#"
+                            class="text-[var(--primary-p)] hover:text-[var(--primary-orange)] duration-500">About Us</a>
+                    </li>
+                    <li class="hover:translate-x-1 duration-500"><a href="#"
+                            class="text-[var(--primary-p)] hover:text-[var(--primary-orange)] duration-500">Latest
+                            Service</a></li>
+                    <li class="hover:translate-x-1 duration-500"><a href="#"
+                            class="text-[var(--primary-p)] hover:text-[var(--primary-orange)] duration-500">Latest Blog
+                            And News</a></li>
+                    <li class="hover:translate-x-1 duration-500"><a href="#"
+                            class="text-[var(--primary-p)] hover:text-[var(--primary-orange)] duration-500">FAQ</a></li>
+                    <li class="hover:translate-x-1 duration-500"><a href="#"
+                            class="text-[var(--primary-p)] hover:text-[var(--primary-orange)] duration-500">Our Creative
+                            Team Member</a></li>
+                </ul>
+            </div>
+            <div class="contact">
+                <h1 class="text-2xl font-bold">Contact</h1>
+                <div class="flex flex-col gap-5 mt-5">
+                    <div class="flex items-center gap-4">
+                        <div
+                            class="w-10 h-10 border rounded-full border-[var(--primary-border)] flex justify-center items-center">
+                            <i class="fa fa-map-marker-alt text-[var(--primary-green)]"></i>
+                        </div>
+                        <p class="text-[var(--primary-p)] w-3/4">1179 KFC Road, Lisbon, Portugal</p>
                     </div>
-                </form>
+                    <div class="flex items-center gap-4">
+                        <div
+                            class="w-10 h-10 border rounded-full border-[var(--primary-border)] flex justify-center items-center">
+                            <i class="fa fa-envelope text-[var(--primary-green)]"></i>
+                        </div>
+                        <a href="#" class="text-[var(--primary-p)]">Sakib23@gmail.com</a>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div
+                            class="w-10 h-10 border rounded-full border-[var(--primary-border)] flex justify-center items-center">
+                            <i class="fa fa-phone text-[var(--primary-green)]"></i>
+                        </div>
+                        <a href="#" class="text-[var(--primary-p)]">012547892354</a>
+                    </div>
+                </div>
             </div>
         </div>
-
     </section>
-    <section class="externalLinks">
-        <div class="container">
-            <div class="social">
-
-            </div>
-            <div class="pages"></div>
-            <div class="contact"></div>
-        </div>
-    </section>
-    <footer class="footer">
-        <div class="container">
-            <p>Yoursite name</p>
-            <div class="privacy">
+    <footer class="footer py-10">
+        <div class="container flex justify-between items-center">
+            <p class="text-[var(--primary-p)]">© Yoursite name 2025 | All Rights Reserved</p>
+            <div class="privacy flex gap-10">
                 <a href="#">Terms & Condition</a>
                 <a href="#">Privacy Policy</a>
                 <a href="#">Contact Us</a>
@@ -627,8 +1060,11 @@
         </div>
     </footer>
 
-
     <script src="/node_modules/tw-elements/js/tw-elements.umd.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 
 </html>
