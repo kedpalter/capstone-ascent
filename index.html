@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost">
     <!-- Animation WOW -->
     <link rel="stylesheet" href="css/animate.css">
+    <!-- SwiperJS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- output css -->
     <link rel="stylesheet" href="./src/css/index.css">
     <!-- custom css -->
@@ -249,7 +251,7 @@
             </div>
         </div>
     </header>
-    <section class="banner bg-[var(--primary-bgc)]">
+    <section class="banner bg-[var(--primary-bgc)] pt-20">
         <div class="container">
             <div class="title-block flex justify-between items-center">
                 <div class="relative">
@@ -258,10 +260,14 @@
                         class="absolute w-full h-full top-2 -left-2.5 rounded-full border-2 border-[var(--primary-orange)]"></span>
                 </div>
                 <div class="title flex flex-col justify-around items-center">
-                    <h1 class="font-[Jost] text-[70px]">Exploring Minds</h1>
+                    <h1 class="font-[Jost] text-[70px] relative">Exploring Minds<div
+                            class="absolute -top-3 -left-9 scale-60"><img src="./src/img/shap-1.png">
+                        </div>
+                    </h1>
                     <h1 class="text-[70px] font-bold">Elementary <span class="text-[var(--primary-pink)]">School</span>
                     </h1>
-                    <p class="w-[400px] text-center text-[var(--primary-p)]">Starting a corporate business typically
+                    <p class="w-[400px] text-center text-[var(--primary-p)] my-5">Starting a corporate business
+                        typically
                         involves several steps, such as develo a business</p>
                     <div
                         class="banner-btn w-[150px] h-[60px] relative border cursor-pointer rounded-lg text-white font-normal bg-[var(--primary-green)] px-6 py-5 hover:[&_span]:w-full">
@@ -484,38 +490,38 @@
             <h3 class="text-center text-lg font-bold text-[var(--primary-cyan)]">Latest Portfolio</h3>
             <h1 class="text-center text-3xl font-bold">Exploring Minds Elementary School<br>Education the only school
             </h1>
-            <div class="pill-nav border">
+            <div class="pill-nav">
                 <!--Pills navigation-->
-                <ul class="mb-5 flex list-none flex-col flex-wrap ps-0 md:flex-row justify-center gap-5" id="pills-tab"
+                <ul class="my-10 flex list-none flex-col flex-wrap ps-0 md:flex-row justify-center gap-5" id="pills-tab"
                     role="tablist" data-twe-nav-ref>
                     <li role="presentation">
                         <a href="#pills-education"
-                            class="my-2 block rounded-lg bg-white border border-[var(--primary-border)] px-7 pb-3.5 pt-4 text-lg font-medium leading-tight hover:bg-[var(--primary-orange)] hover:text-white text-[var(--primary-p)] hover:border-transparent data-[twe-nav-active]:bg-[var(--primary-orange)] data-[twe-nav-active]:text-white data-[twe-nav-active]:border-none dark:bg-neutral-700 dark:text-white/50 dark:data-[twe-nav-active]:!bg-slate-900 dark:data-[twe-nav-active]:text-primary-500 md:me-4 duration-500"
+                            class="my-2 block rounded-lg bg-white border border-[var(--primary-border)] px-7 pb-3.5 pt-4 text-lg font-medium leading-tight hover:bg-[var(--primary-orange)] hover:text-white text-[var(--primary-p)] hover:border-transparent data-[twe-nav-active]:bg-[var(--primary-orange)] data-[twe-nav-active]:text-white data-[twe-nav-active]:border-transparent dark:bg-neutral-700 dark:text-white/50 dark:data-[twe-nav-active]:!bg-slate-900 dark:data-[twe-nav-active]:text-primary-500 md:me-4 duration-500"
                             id="pills-education-tab" data-twe-toggle="pill" data-twe-target="#pills-education"
                             data-twe-nav-active role="tab" aria-controls="pills-education"
                             aria-selected="true">Education</a>
                     </li>
                     <li role="presentation">
                         <a href="#pills-school"
-                            class="my-2 block rounded-lg bg-white border border-[var(--primary-border)] px-7 pb-3.5 pt-4 text-lg font-medium leading-tight hover:bg-[var(--primary-orange)] hover:text-white text-[var(--primary-p)] hover:border-transparent data-[twe-nav-active]:bg-[var(--primary-orange)] data-[twe-nav-active]:text-white data-[twe-nav-active]:border-none dark:bg-neutral-700 dark:text-white/50 dark:data-[twe-nav-active]:!bg-slate-900 dark:data-[twe-nav-active]:text-primary-500 md:me-4 duration-500"
+                            class="my-2 block rounded-lg bg-white border border-[var(--primary-border)] px-7 pb-3.5 pt-4 text-lg font-medium leading-tight hover:bg-[var(--primary-orange)] hover:text-white text-[var(--primary-p)] hover:border-transparent data-[twe-nav-active]:bg-[var(--primary-orange)] data-[twe-nav-active]:text-white data-[twe-nav-active]:border-transparent dark:bg-neutral-700 dark:text-white/50 dark:data-[twe-nav-active]:!bg-slate-900 dark:data-[twe-nav-active]:text-primary-500 md:me-4 duration-500"
                             id="pills-school-tab" data-twe-toggle="pill" data-twe-target="#pills-school" role="tab"
                             aria-controls="pills-school" aria-selected="true">School</a>
                     </li>
                     <li role="presentation">
                         <a href="#pills-learn"
-                            class="my-2 block rounded-lg bg-white border border-[var(--primary-border)] px-7 pb-3.5 pt-4 text-lg font-medium leading-tight hover:bg-[var(--primary-orange)] hover:text-white text-[var(--primary-p)] hover:border-transparent data-[twe-nav-active]:bg-[var(--primary-orange)] data-[twe-nav-active]:text-white data-[twe-nav-active]:border-none dark:bg-neutral-700 dark:text-white/50 dark:data-[twe-nav-active]:!bg-slate-900 dark:data-[twe-nav-active]:text-primary-500 md:me-4 duration-500"
+                            class="my-2 block rounded-lg bg-white border border-[var(--primary-border)] px-7 pb-3.5 pt-4 text-lg font-medium leading-tight hover:bg-[var(--primary-orange)] hover:text-white text-[var(--primary-p)] hover:border-transparent data-[twe-nav-active]:bg-[var(--primary-orange)] data-[twe-nav-active]:text-white data-[twe-nav-active]:border-transparent dark:bg-neutral-700 dark:text-white/50 dark:data-[twe-nav-active]:!bg-slate-900 dark:data-[twe-nav-active]:text-primary-500 md:me-4 duration-500"
                             id="pills-learn-tab" data-twe-toggle="pill" data-twe-target="#pills-learn" role="tab"
                             aria-controls="pills-learn" aria-selected="true">Learn</a>
                     </li>
                     <li role="presentation">
                         <a href="#pills-child"
-                            class="my-2 block rounded-lg bg-white border border-[var(--primary-border)] px-7 pb-3.5 pt-4 text-lg font-medium leading-tight hover:bg-[var(--primary-orange)] hover:text-white text-[var(--primary-p)] hover:border-transparent data-[twe-nav-active]:bg-[var(--primary-orange)] data-[twe-nav-active]:text-white data-[twe-nav-active]:border-none dark:bg-neutral-700 dark:text-white/50 dark:data-[twe-nav-active]:!bg-slate-900 dark:data-[twe-nav-active]:text-primary-500 md:me-4 duration-500"
+                            class="my-2 block rounded-lg bg-white border border-[var(--primary-border)] px-7 pb-3.5 pt-4 text-lg font-medium leading-tight hover:bg-[var(--primary-orange)] hover:text-white text-[var(--primary-p)] hover:border-transparent data-[twe-nav-active]:bg-[var(--primary-orange)] data-[twe-nav-active]:text-white data-[twe-nav-active]:border-transparent dark:bg-neutral-700 dark:text-white/50 dark:data-[twe-nav-active]:!bg-slate-900 dark:data-[twe-nav-active]:text-primary-500 md:me-4 duration-500"
                             id="pills-child-tab" data-twe-toggle="pill" data-twe-target="#pills-child" role="tab"
                             aria-controls="pills-child" aria-selected="true">Child</a>
                     </li>
                     <li role="presentation">
                         <a href="#pills-coaching"
-                            class="my-2 block rounded-lg bg-white border border-[var(--primary-border)] px-7 pb-3.5 pt-4 text-lg font-medium leading-tight hover:bg-[var(--primary-orange)] hover:text-white text-[var(--primary-p)] hover:border-transparent data-[twe-nav-active]:bg-[var(--primary-orange)] data-[twe-nav-active]:text-white data-[twe-nav-active]:border-none dark:bg-neutral-700 dark:text-white/50 dark:data-[twe-nav-active]:!bg-slate-900 dark:data-[twe-nav-active]:text-primary-500 md:me-4 duration-500"
+                            class="my-2 block rounded-lg bg-white border border-[var(--primary-border)] px-7 pb-3.5 pt-4 text-lg font-medium leading-tight hover:bg-[var(--primary-orange)] hover:text-white text-[var(--primary-p)] hover:border-transparent data-[twe-nav-active]:bg-[var(--primary-orange)] data-[twe-nav-active]:text-white data-[twe-nav-active]:border-transparent dark:bg-neutral-700 dark:text-white/50 dark:data-[twe-nav-active]:!bg-slate-900 dark:data-[twe-nav-active]:text-primary-500 md:me-4 duration-500"
                             id="pills-coaching-tab" data-twe-toggle="pill" data-twe-target="#pills-coaching" role="tab"
                             aria-controls="pills-coaching" aria-selected="true">Coaching</a>
                     </li>
@@ -524,51 +530,294 @@
                 <!--Pills content-->
                 <div class="mb-6">
                     <!-- Pill 1 -->
-                    <div class="hidden opacity-100 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block border"
+                    <div class="hidden opacity-100 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block"
                         id="pills-education" role="tabpanel" aria-labelledby="pills-education-tab" data-twe-tab-active>
                         <div class="education grid grid-cols-12 gap-7.5">
-                            <div class="col-span-4 row-span-2">
-                                <img src="./src/img/portfolio-1.png" class="">
-                                <!-- <div
-                                    class="absolute top-0 left-0 w-9/10 h-9/10 bg-[var(--primary-orange)] opacity-80 text-white rounded-lg">
-                                    <h2>Exploring Minds Elementary Best School</h2>
+                            <div class="col-span-4 row-span-2 relative hover:[&_div]:opacity-80 duration-500">
+                                <img src="./src/img/portfolio-1.png">
+                                <div
+                                    class="child-2 absolute flex flex-col justify-center items-center -translate-y-1/2 -translate-x-1/2 top-1/2 left-1/2 w-9/10 h-9/10 bg-[var(--primary-orange)] opacity-0 text-white rounded-lg duration-500">
+                                    <h2 class="text-xl w-2/3 font-bold text-center">Exploring Minds Elementary Best
+                                        School
+                                    </h2>
                                     <p>Dreamland Elementary</p>
-                                    <span><i class="fa fa-arrow-right"></i></span>
-                                </div> -->
+                                    <div
+                                        class="w-[40px] h-[40px] rounded-full bg-white text-[var(--primary-pink)] flex justify-center items-center cursor-pointer absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2">
+                                        <i class="fa fa-arrow-right"></i>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-start-5 col-span-5">
-                                <img src="./src/img/portfolio-2.png" class="">
+                            <div class="col-start-5 col-span-5 relative hover:[&_div]:opacity-80 duration-500">
+                                <img src="./src/img/portfolio-2.png">
+                                <div
+                                    class="child-2 absolute flex flex-col justify-center items-center -translate-y-1/2 -translate-x-1/2 top-1/2 left-1/2 w-9/10 h-[80%] bg-[var(--primary-orange)] opacity-0 text-white rounded-lg duration-500">
+                                    <h2 class="text-xl w-2/3 font-bold text-center">Exploring Minds Elementary Best
+                                        School
+                                    </h2>
+                                    <p>Dreamland Elementary</p>
+                                    <div
+                                        class="w-[40px] h-[40px] rounded-full bg-white text-[var(--primary-pink)] flex justify-center items-center cursor-pointer absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2">
+                                        <i class="fa fa-arrow-right"></i>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-start-10 col-span-3">
+                            <div class="col-start-10 col-span-3 relative hover:[&_div]:opacity-80 duration-500">
                                 <img src="./src/img/portfolio-3.png">
+                                <div
+                                    class="child-2 absolute flex flex-col justify-center items-center -translate-y-1/2 -translate-x-1/2 top-1/2 left-1/2 w-9/10 h-[80%] bg-[var(--primary-orange)] opacity-0 text-white rounded-lg duration-500">
+                                    <h2 class="text-xl w-2/3 font-bold text-center">Exploring Minds Elementary Best
+                                        School
+                                    </h2>
+                                    <p>Dreamland Elementary</p>
+                                    <div
+                                        class="w-[40px] h-[40px] rounded-full bg-white text-[var(--primary-pink)] flex justify-center items-center cursor-pointer absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2">
+                                        <i class="fa fa-arrow-right"></i>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-start-5 col-span-4 row-start-2">
+                            <div
+                                class="col-start-5 col-span-4 row-start-2 relative hover:[&_div]:opacity-80 duration-500">
                                 <img src="./src/img/portfolio-5.png">
+                                <div
+                                    class="child-2 absolute flex flex-col justify-center items-center -translate-y-1/2 -translate-x-1/2 top-1/2 left-1/2 w-9/10 h-[80%] bg-[var(--primary-orange)] opacity-0 text-white rounded-lg duration-500">
+                                    <h2 class="text-xl w-2/3 font-bold text-center">Exploring Minds Elementary Best
+                                        School
+                                    </h2>
+                                    <p>Dreamland Elementary</p>
+                                    <div
+                                        class="w-[40px] h-[40px] rounded-full bg-white text-[var(--primary-pink)] flex justify-center items-center cursor-pointer absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2">
+                                        <i class="fa fa-arrow-right"></i>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-start-9 col-span-4 row-start-2">
+                            <div
+                                class="col-start-9 col-span-4 row-start-2 relative hover:[&_div]:opacity-80 duration-500">
                                 <img src="./src/img/portfolio-6.png">
+                                <div
+                                    class="child-2 absolute flex flex-col justify-center items-center -translate-y-1/2 -translate-x-1/2 top-1/2 left-1/2 w-9/10 h-[80%] bg-[var(--primary-orange)] opacity-0 text-white rounded-lg duration-500">
+                                    <h2 class="text-xl w-2/3 font-bold text-center">Exploring Minds Elementary Best
+                                        School
+                                    </h2>
+                                    <p>Dreamland Elementary</p>
+                                    <div
+                                        class="w-[40px] h-[40px] rounded-full bg-white text-[var(--primary-pink)] flex justify-center items-center cursor-pointer absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2">
+                                        <i class="fa fa-arrow-right"></i>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <!-- Pill 2 -->
                     <div class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block"
                         id="pills-school" role="tabpanel" aria-labelledby="pills-school-tab">
-                        Tab 2 content
+                        <div class="school grid grid-cols-12 gap-7.5">
+                            <div
+                                class="col-start-1 col-span-7 row-start-1 relative hover:[&_div]:opacity-80 duration-500">
+                                <img src="./src/img/portfolio-1.png" class="object-cover w-full h-[400px] rounded-lg">
+                                <div
+                                    class="child-2 absolute flex flex-col justify-center items-center -translate-y-1/2 -translate-x-1/2 top-1/2 left-1/2 w-9/10 h-9/10 bg-[var(--primary-orange)] opacity-0 text-white rounded-lg duration-500">
+                                    <h2 class="text-xl w-2/3 font-bold text-center">Exploring Minds Elementary Best
+                                        School
+                                    </h2>
+                                    <p>Dreamland Elementary</p>
+                                    <div
+                                        class="w-[40px] h-[40px] rounded-full bg-white text-[var(--primary-pink)] flex justify-center items-center cursor-pointer absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2">
+                                        <i class="fa fa-arrow-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-start-8 col-span-5 relative hover:[&_div]:opacity-80 duration-500">
+                                <img src="./src/img/portfolio-2.png" class="object-cover w-full h-[400px] rounded-lg">
+                                <div
+                                    class="child-2 absolute flex flex-col justify-center items-center -translate-y-1/2 -translate-x-1/2 top-1/2 left-1/2 w-9/10 h-[80%] bg-[var(--primary-orange)] opacity-0 text-white rounded-lg duration-500">
+                                    <h2 class="text-xl w-2/3 font-bold text-center">Exploring Minds Elementary Best
+                                        School
+                                    </h2>
+                                    <p>Dreamland Elementary</p>
+                                    <div
+                                        class="w-[40px] h-[40px] rounded-full bg-white text-[var(--primary-pink)] flex justify-center items-center cursor-pointer absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2">
+                                        <i class="fa fa-arrow-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="col-start-1 row-start-2 col-span-6 row-span-1 relative hover:[&_div]:opacity-80 duration-500">
+                                <img src="./src/img/portfolio-3.png" class="object-cover w-full h-[400px] rounded-lg">
+                                <div
+                                    class="child-2 absolute flex flex-col justify-center items-center -translate-y-1/2 -translate-x-1/2 top-1/2 left-1/2 w-9/10 h-[80%] bg-[var(--primary-orange)] opacity-0 text-white rounded-lg duration-500">
+                                    <h2 class="text-xl w-2/3 font-bold text-center">Exploring Minds Elementary Best
+                                        School
+                                    </h2>
+                                    <p>Dreamland Elementary</p>
+                                    <div
+                                        class="w-[40px] h-[40px] rounded-full bg-white text-[var(--primary-pink)] flex justify-center items-center cursor-pointer absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2">
+                                        <i class="fa fa-arrow-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="col-start-7 col-span-6 row-start-2 relative hover:[&_div]:opacity-80 duration-500">
+                                <img src="./src/img/portfolio-5.png" class="object-cover w-full h-[400px] rounded-lg">
+                                <div
+                                    class="child-2 absolute flex flex-col justify-center items-center -translate-y-1/2 -translate-x-1/2 top-1/2 left-1/2 w-9/10 h-[80%] bg-[var(--primary-orange)] opacity-0 text-white rounded-lg duration-500">
+                                    <h2 class="text-xl w-2/3 font-bold text-center">Exploring Minds Elementary Best
+                                        School
+                                    </h2>
+                                    <p>Dreamland Elementary</p>
+                                    <div
+                                        class="w-[40px] h-[40px] rounded-full bg-white text-[var(--primary-pink)] flex justify-center items-center cursor-pointer absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2">
+                                        <i class="fa fa-arrow-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <!-- Pill 3 -->
                     <div class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block"
                         id="pills-learn" role="tabpanel" aria-labelledby="pills-learn-tab">
-                        Tab 3 content
+                        <div class="learn grid grid-cols-12 gap-7.5">
+                            <div class="col-start-1 col-span-6 relative hover:[&_div]:opacity-80 duration-500">
+                                <img src="./src/img/portfolio-3.png" class="object-cover w-full h-[400px] rounded-lg">
+                                <div
+                                    class="child-2 absolute flex flex-col justify-center items-center -translate-y-1/2 -translate-x-1/2 top-1/2 left-1/2 w-9/10 h-[80%] bg-[var(--primary-orange)] opacity-0 text-white rounded-lg duration-500">
+                                    <h2 class="text-xl w-2/3 font-bold text-center">Exploring Minds Elementary Best
+                                        School
+                                    </h2>
+                                    <p>Dreamland Elementary</p>
+                                    <div
+                                        class="w-[40px] h-[40px] rounded-full bg-white text-[var(--primary-pink)] flex justify-center items-center cursor-pointer absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2">
+                                        <i class="fa fa-arrow-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-start-7 col-span-6 relative hover:[&_div]:opacity-80 duration-500">
+                                <img src="./src/img/portfolio-5.png" class="object-cover w-full h-[400px] rounded-lg">
+                                <div
+                                    class="child-2 absolute flex flex-col justify-center items-center -translate-y-1/2 -translate-x-1/2 top-1/2 left-1/2 w-9/10 h-[80%] bg-[var(--primary-orange)] opacity-0 text-white rounded-lg duration-500">
+                                    <h2 class="text-xl w-2/3 font-bold text-center">Exploring Minds Elementary Best
+                                        School
+                                    </h2>
+                                    <p>Dreamland Elementary</p>
+                                    <div
+                                        class="w-[40px] h-[40px] rounded-full bg-white text-[var(--primary-pink)] flex justify-center items-center cursor-pointer absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2">
+                                        <i class="fa fa-arrow-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <!-- Pill 4 -->
                     <div class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block"
                         id="pills-child" role="tabpanel" aria-labelledby="pills-child-tab">
-                        Tab 4 content
+                        <div class="child grid grid-cols-12 gap-7.5">
+                            <div
+                                class="col-start-1 col-span-7 row-start-1 relative hover:[&_div]:opacity-80 duration-500">
+                                <img src="./src/img/portfolio-1.png" class="object-cover w-full h-[400px] rounded-lg">
+                                <div
+                                    class="child-2 absolute flex flex-col justify-center items-center -translate-y-1/2 -translate-x-1/2 top-1/2 left-1/2 w-9/10 h-9/10 bg-[var(--primary-orange)] opacity-0 text-white rounded-lg duration-500">
+                                    <h2 class="text-xl w-2/3 font-bold text-center">Exploring Minds Elementary Best
+                                        School
+                                    </h2>
+                                    <p>Dreamland Elementary</p>
+                                    <div
+                                        class="w-[40px] h-[40px] rounded-full bg-white text-[var(--primary-pink)] flex justify-center items-center cursor-pointer absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2">
+                                        <i class="fa fa-arrow-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-start-8 col-span-5 relative hover:[&_div]:opacity-80 duration-500">
+                                <img src="./src/img/portfolio-2.png" class="object-cover w-full h-[400px] rounded-lg">
+                                <div
+                                    class="child-2 absolute flex flex-col justify-center items-center -translate-y-1/2 -translate-x-1/2 top-1/2 left-1/2 w-9/10 h-[80%] bg-[var(--primary-orange)] opacity-0 text-white rounded-lg duration-500">
+                                    <h2 class="text-xl w-2/3 font-bold text-center">Exploring Minds Elementary Best
+                                        School
+                                    </h2>
+                                    <p>Dreamland Elementary</p>
+                                    <div
+                                        class="w-[40px] h-[40px] rounded-full bg-white text-[var(--primary-pink)] flex justify-center items-center cursor-pointer absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2">
+                                        <i class="fa fa-arrow-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <!-- Pill 5 -->
                     <div class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block"
                         id="pills-coaching" role="tabpanel" aria-labelledby="pills-coaching-tab">
-                        Tab 5 content
+                        <div class="coaching grid grid-cols-12 gap-7.5">
+                            <div class="col-span-4 row-span-2 relative hover:[&_div]:opacity-80 duration-500">
+                                <img src="./src/img/portfolio-1.png">
+                                <div
+                                    class="child-2 absolute flex flex-col justify-center items-center -translate-y-1/2 -translate-x-1/2 top-1/2 left-1/2 w-9/10 h-9/10 bg-[var(--primary-orange)] opacity-0 text-white rounded-lg duration-500">
+                                    <h2 class="text-xl w-2/3 font-bold text-center">Exploring Minds Elementary Best
+                                        School
+                                    </h2>
+                                    <p>Dreamland Elementary</p>
+                                    <div
+                                        class="w-[40px] h-[40px] rounded-full bg-white text-[var(--primary-pink)] flex justify-center items-center cursor-pointer absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2">
+                                        <i class="fa fa-arrow-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-start-5 col-span-5 relative hover:[&_div]:opacity-80 duration-500">
+                                <img src="./src/img/portfolio-2.png">
+                                <div
+                                    class="child-2 absolute flex flex-col justify-center items-center -translate-y-1/2 -translate-x-1/2 top-1/2 left-1/2 w-9/10 h-[80%] bg-[var(--primary-orange)] opacity-0 text-white rounded-lg duration-500">
+                                    <h2 class="text-xl w-2/3 font-bold text-center">Exploring Minds Elementary Best
+                                        School
+                                    </h2>
+                                    <p>Dreamland Elementary</p>
+                                    <div
+                                        class="w-[40px] h-[40px] rounded-full bg-white text-[var(--primary-pink)] flex justify-center items-center cursor-pointer absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2">
+                                        <i class="fa fa-arrow-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-start-10 col-span-3 relative hover:[&_div]:opacity-80 duration-500">
+                                <img src="./src/img/portfolio-3.png">
+                                <div
+                                    class="child-2 absolute flex flex-col justify-center items-center -translate-y-1/2 -translate-x-1/2 top-1/2 left-1/2 w-9/10 h-[80%] bg-[var(--primary-orange)] opacity-0 text-white rounded-lg duration-500">
+                                    <h2 class="text-xl w-2/3 font-bold text-center">Exploring Minds Elementary Best
+                                        School
+                                    </h2>
+                                    <p>Dreamland Elementary</p>
+                                    <div
+                                        class="w-[40px] h-[40px] rounded-full bg-white text-[var(--primary-pink)] flex justify-center items-center cursor-pointer absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2">
+                                        <i class="fa fa-arrow-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="col-start-5 col-span-4 row-start-2 relative hover:[&_div]:opacity-80 duration-500">
+                                <img src="./src/img/portfolio-5.png">
+                                <div
+                                    class="child-2 absolute flex flex-col justify-center items-center -translate-y-1/2 -translate-x-1/2 top-1/2 left-1/2 w-9/10 h-[80%] bg-[var(--primary-orange)] opacity-0 text-white rounded-lg duration-500">
+                                    <h2 class="text-xl w-2/3 font-bold text-center">Exploring Minds Elementary Best
+                                        School
+                                    </h2>
+                                    <p>Dreamland Elementary</p>
+                                    <div
+                                        class="w-[40px] h-[40px] rounded-full bg-white text-[var(--primary-pink)] flex justify-center items-center cursor-pointer absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2">
+                                        <i class="fa fa-arrow-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="col-start-9 col-span-4 row-start-2 relative hover:[&_div]:opacity-80 duration-500">
+                                <img src="./src/img/portfolio-6.png">
+                                <div
+                                    class="child-2 absolute flex flex-col justify-center items-center -translate-y-1/2 -translate-x-1/2 top-1/2 left-1/2 w-9/10 h-[80%] bg-[var(--primary-orange)] opacity-0 text-white rounded-lg duration-500">
+                                    <h2 class="text-xl w-2/3 font-bold text-center">Exploring Minds Elementary Best
+                                        School
+                                    </h2>
+                                    <p>Dreamland Elementary</p>
+                                    <div
+                                        class="w-[40px] h-[40px] rounded-full bg-white text-[var(--primary-pink)] flex justify-center items-center cursor-pointer absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2">
+                                        <i class="fa fa-arrow-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -862,9 +1111,93 @@
                     accounts a number
                     paid the most beautiful think</p>
             </div>
-            <div class="content">
+            <div class="content relative">
                 <img src="./src/img/children.png" alt="">
-                <div class="testimonial-carusel">
+                <div class="swiper testimonial-swiper">
+                    <div class="swiper-wrapper">
+                        <!-- item 1 -->
+                        <div class="swiper-slide border w-1/2 rounded-xl bg-white p-[60px]">
+                            <div>
+                                <div class="flex justify-between items-center">
+                                    <div class="flex items-center gap-4">
+                                        <img src="./src/img/user-1.png">
+                                        <div>
+                                            <h2 class="text-2xl font-bold">Shakib Al Hasan</h2>
+                                            <p class="text-base text-[var(--primary-p)]">Marketing Manager</p>
+                                        </div>
+                                    </div>
+                                    <img src="./src/img/quotation.png">
+                                </div>
+                                <p class="text-base text-[var(--primary-p)] my-7">Their product exceeded his my routi
+                                    expectations. The the quality and attention to detail
+                                    a the a most outstanding and it has become an essential most a education the man who
+                                    can
+                                    do </p>
+                                <div>
+                                    <i class="fa fa-star text-[var(--primary-orange)] text-xl"></i>
+                                    <i class="fa fa-star text-[var(--primary-orange)] text-xl"></i>
+                                    <i class="fa fa-star text-[var(--primary-orange)] text-xl"></i>
+                                    <i class="fa fa-star text-[var(--primary-orange)] text-xl"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item 2 -->
+                        <div class="swiper-slide border w-1/2 rounded-xl bg-white p-[60px]">
+                            <div>
+                                <div class="flex justify-between items-center">
+                                    <div class="flex items-center gap-4">
+                                        <img src="./src/img/user-1.png">
+                                        <div>
+                                            <h2 class="text-2xl font-bold">Shakib Al Hasan</h2>
+                                            <p class="text-base text-[var(--primary-p)]">Marketing Manager</p>
+                                        </div>
+                                    </div>
+                                    <img src="./src/img/quotation.png">
+                                </div>
+                                <p class="text-base text-[var(--primary-p)] my-7">Their product exceeded his my routi
+                                    expectations. The the quality and attention to detail
+                                    a the a most outstanding and it has become an essential most a education the man who
+                                    can
+                                    do </p>
+                                <div>
+                                    <i class="fa fa-star text-[var(--primary-orange)] text-xl"></i>
+                                    <i class="fa fa-star text-[var(--primary-orange)] text-xl"></i>
+                                    <i class="fa fa-star text-[var(--primary-orange)] text-xl"></i>
+                                    <i class="fa fa-star text-[var(--primary-orange)] text-xl"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item 3 -->
+                        <div class="swiper-slide border w-1/2 rounded-xl bg-white p-[60px]">
+                            <div>
+                                <div class="flex justify-between items-center">
+                                    <div class="flex items-center gap-4">
+                                        <img src="./src/img/user-1.png">
+                                        <div>
+                                            <h2 class="text-2xl font-bold">Shakib Al Hasan</h2>
+                                            <p class="text-base text-[var(--primary-p)]">Marketing Manager</p>
+                                        </div>
+                                    </div>
+                                    <img src="./src/img/quotation.png">
+                                </div>
+                                <p class="text-base text-[var(--primary-p)] my-7">Their product exceeded his my routi
+                                    expectations. The the quality and attention to detail
+                                    a the a most outstanding and it has become an essential most a education the man who
+                                    can
+                                    do </p>
+                                <div>
+                                    <i class="fa fa-star text-[var(--primary-orange)] text-xl"></i>
+                                    <i class="fa fa-star text-[var(--primary-orange)] text-xl"></i>
+                                    <i class="fa fa-star text-[var(--primary-orange)] text-xl"></i>
+                                    <i class="fa fa-star text-[var(--primary-orange)] text-xl"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div> -->
+                    </div>
+
 
                 </div>
             </div>
@@ -1059,7 +1392,9 @@
             </div>
         </div>
     </footer>
-
+    <!-- SCRIPT -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./src/js/index.js"></script>
     <script src="/node_modules/tw-elements/js/tw-elements.umd.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script>
