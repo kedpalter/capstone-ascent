@@ -35,3 +35,9 @@ const testimonial = new Swiper('.testimonial-swiper', {
     //     prevEl: '.swiper-button-prev',
     // },
 });
+
+//ontop
+function scrollnow(direct) {
+  document.getElementsByClassName(direct)[0].scrollIntoView({ behavior: 'smooth', block: 'center' });
+  dropbox.style.display = "none";
+}

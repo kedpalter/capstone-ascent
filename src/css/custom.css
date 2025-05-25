@@ -1,3 +1,4 @@
+
 .swiper-slide-active {
     background-color: white;
 }
@@ -5,3 +6,6 @@
     opacity: 100;
     transition: 0.5s;
 }
+
+/* Animation */
+@keyframes 
