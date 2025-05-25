@@ -1,4 +1,8 @@
 /* Khi code -> code css ở folder tailwind, khi sử dụng thì sử dụng tại folder css */
+* {
+    font-family: sans-serif;
+}
+
 :root {
     --primary-pink: #ED145B;
     --primary-cyan: #1CBBB4;
@@ -9,9 +13,72 @@
     --primary-border: #E5E7EB;
 }
 
-* {
-    font-family: 'Nunito', sans-serif;
+h1,
+h2 {
+    font-family: 'Jost';
 }
+
+h3 {
+    font-family: 'Bubblegum Sans';
+}
+
+p,
+a {
+    font-family: 'Nunito';
+}
+
+.swiper-slide-active {
+    background-color: white;
+}
+
+.swiper-slide-active .content {
+    opacity: 100;
+    transition: 0.5s;
+}
+
+.self-animation-leftToRight {
+    animation: leftToRight 4s infinite;
+}
+
+.self-animation-upToDown {
+    animation: upToDown 4s infinite;
+}
+
+.self-animation-skw {
+    animation: skw 2s linear infinite;
+}
+
+/* Animation */
+@keyframes leftToRight {
+    50% {
+        transform: translateX(-32px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes upToDown {
+    50% {
+        transform: translateY(20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes skw {
+    50% {
+        transform: skewX(5deg);
+    }
+
+    100% {
+        transform: skewX(0);
+    }
+}
+
 
 .container {
     margin: auto;

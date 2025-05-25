@@ -10,8 +10,10 @@
     <!-- font -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bubblegum+Sans">
     <!-- Animation WOW -->
     <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- SwiperJS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- output css -->
@@ -251,10 +253,15 @@
             </div>
         </div>
     </header>
-    <section class="banner bg-[var(--primary-bgc)] pt-20">
+    <section class="banner bg-[var(--primary-bgc)] pt-20 relative">
+        <div class="self-animation-leftToRight absolute z-10">
+            <img src="./src/img/left-circle-1.png">
+            <img src="./src/img/left-circle-2.png" class="pt-6 pl-8">
+        </div>
+        <img src="./src/img/right-circle.png" class="absolute right-0 bottom-[150px] self-animation-upToDown">
         <div class="container">
             <div class="title-block flex justify-between items-center">
-                <div class="relative">
+                <div class="self-animation-upToDown relative">
                     <img src="./src/img/boy_img_1.png" alt="boy1">
                     <span
                         class="absolute w-full h-full top-2 -left-2.5 rounded-full border-2 border-[var(--primary-orange)]"></span>
@@ -278,7 +285,7 @@
                             class="w-0 h-full rounded-lg absolute top-0 left-0 bg-[var(--primary-cyan)] duration-500 overflow-hidden z-10"></span>
                     </div>
                 </div>
-                <div class="star-icon relative">
+                <div class="star-icon relative self-animation-skw">
                     <img src="./src/img/shap.png" alt="star1" class="relative">
                     <img src="./src/img/shap.png" alt="star2" class="absolute -top-10 left-7 scale-50">
                     <img src="./src/img/shap.png" alt="star3" class="absolute top-10 -left-7 scale-70">
@@ -286,18 +293,17 @@
             </div>
             <div class="decor-block relative pt-[70px]">
                 <img src="./src/img/painting.png" alt="painting" class="relative">
-                <div class="absolute -top-10 right-0">
+                <div class="self-animation-upToDown absolute -top-10 right-0">
                     <img src="./src/img/boy_img_2.png" alt="boy2">
                     <span
                         class="absolute w-full h-full top-2 -left-2.5 rounded-full border-2 border-[var(--primary-cyan)]"></span>
                 </div>
-
             </div>
         </div>
     </section>
     <section class="numberTalk py-20">
         <div class="container flex gap-10">
-            <div class="introduce flex-1/2">
+            <div class="introduce flex-1/2 wow fadeInUp animate__animated animate__fadeInUp">
                 <h3 class="text-lg font-bold text-[var(--primary-orange)]">Number Talks</h3>
                 <h1 class="text-3xl font-bold">Invest in education invest<br>in the future</h1>
                 <p class="text-base text-[var(--primary-p)] my-10">Lorem ipsum dolor sit amet consectetur. Amet lectus
@@ -314,7 +320,8 @@
                         class="w-0 h-full rounded-lg absolute top-0 left-0 bg-[var(--primary-cyan)] duration-500 overflow-hidden z-10"></span>
                 </div>
             </div>
-            <div class="stats flex-1/2 grid grid-cols-2 gap-7">
+            <div
+                class="stats flex-1/2 grid grid-cols-2 gap-7 wow fadeInUp animate__animated animate__fadeInUp overflow-hidden">
                 <div
                     class="running border border-[var(--primary-border)] rounded-lg flex gap-2 justify-start items-center p-6">
                     <div class="w-20 h-20 flex justify-center items-center bg-[var(--primary-orange)] rounded-full">
@@ -362,11 +369,12 @@
         <div class="container flex gap-10">
             <div class="flex-1/2 relative flex gap-7 items-end">
                 <img src="./src/img/shap-1.png" alt="decor2" class="absolute -top-10 -left-10">
-                <img src="./src/img/about-1.png" alt="about1">
+                <img src="./src/img/about-1.png" alt="about1"
+                    class=" wow fadeInUp animate__animated animate__fadeInUp overflow-hidden">
                 <div class="flex flex-col gap-8">
                     <div class="px-5 py-6 rounded-lg bg-[var(--primary-bgc)] flex flex-col justify-center items-center">
                         <img src="./src/img/icreement.png" alt="increement">
-                        <h3 class="text-xl font-bold">Academy</h3>
+                        <h1 class="text-xl font-bold">Academy</h1>
                         <p class="text-[var(--primary-p)]">Learning Ladder School</p>
                     </div>
                     <div class="px-5 py-6 rounded-lg drop-shadow-[0px_4.8px_24.4px_rgba(19,16,34,0.10)] bg-white">
@@ -378,7 +386,9 @@
             </div>
             <div class="text-block flex-1/2">
                 <h3 class="text-lg font-bold text-[var(--primary-cyan)]">About Us</h3>
-                <h1 class="text-3xl font-bold w-2/3">Unlocking Potential, One Child at a just Time in school</h1>
+                <h1 class="text-3xl font-bold w-2/3 wow fadeInUp animate__animated animate__fadeInUp">Unlocking
+                    Potential, One Child at a just Time in
+                    school</h1>
                 <p class="w-2/3 text-base text-[var(--primary-p)] my-10">Lorem ipsum dolor sit amet consectetur. Amet
                     lectus
                     mi
@@ -399,10 +409,11 @@
     <section class="programs py-20">
         <div class="container relative">
             <h3 class="text-center text-lg font-bold text-[var(--primary-green)]">Education Programs</h3>
-            <h1 class="text-center text-3xl font-bold">Strong Foundation for Success For<br>Nurturing Curiosityl</h1>
+            <h1 class="text-center text-3xl font-bold wow fadeInUp animate__animated animate__fadeInUp">Strong
+                Foundation for Success For<br>Nurturing Curiosityl</h1>
             <div class="content grid grid-cols-2 gap-y-10 gap-x-20 my-20">
                 <div
-                    class="online group relative bg-white border border-[var(--primary-border)] rounded-lg hover:[&_h2]:text-[var(--primary-green)] hover:border-transparent hover:shadow-4 duration-300 flex items-center">
+                    class="online group relative bg-white border border-[var(--primary-border)] rounded-lg hover:[&_h2]:text-[var(--primary-green)] hover:border-transparent hover:shadow-4 duration-300 flex items-center wow fadeInUp animate__animated animate__fadeInUp">
                     <div class="text p-11">
                         <div class="pl-10">
                             <h2 class="text-2xl font-bold duration-300 hover:cursor-pointer">Online Class</h2>
@@ -416,13 +427,13 @@
                         </div>
                     </div>
                     <div
-                        class="programIcon absolute -translate-x-1/2 w-[90px] h-[90px] bg-white group-hover:bg-[var(--primary-green)] border border-[var(--primary-border)] rounded-lg flex justify-center items-center duration-300">
+                        class="programIcon absolute -translate-x-1/2 w-[90px] h-[90px] bg-white group-hover:bg-[var(--primary-green)] border border-[var(--primary-border)] rounded-lg flex justify-center items-center duration-300 wow fadeInUp animate__animated animate__fadeInUp">
                         <i
                             class="fa fa-car-side text-5xl text-[var(--primary-green)] group-hover:text-white duration-300"></i>
                     </div>
                 </div>
                 <div
-                    class="formal group relative bg-white border border-[var(--primary-border)] rounded-lg hover:[&_h2]:text-[var(--primary-green)] hover:border-transparent hover:shadow-4 duration-300 flex items-center">
+                    class="formal group relative bg-white border border-[var(--primary-border)] rounded-lg hover:[&_h2]:text-[var(--primary-green)] hover:border-transparent hover:shadow-4 duration-300 flex items-center wow fadeInUp animate__animated animate__fadeInUp">
                     <div class="text p-11">
                         <div class="pl-10">
                             <h2 class="text-2xl font-bold duration-300 hover:cursor-pointer">Formal Tuition</h2>
@@ -436,7 +447,7 @@
                         </div>
                     </div>
                     <div
-                        class="programIcon absolute -translate-x-1/2 w-[90px] h-[90px] bg-white group-hover:bg-[var(--primary-green)] border border-[var(--primary-border)] rounded-lg flex justify-center items-center duration-300">
+                        class="programIcon absolute -translate-x-1/2 w-[90px] h-[90px] bg-white group-hover:bg-[var(--primary-green)] border border-[var(--primary-border)] rounded-lg flex justify-center items-center duration-300 wow fadeInUp animate__animated animate__fadeInUp">
                         <i
                             class="fa fa-car-side text-5xl text-[var(--primary-green)] group-hover:text-white duration-300"></i>
                     </div>
@@ -482,13 +493,15 @@
                     </div>
                 </div>
             </div>
-            <img src="./src/img/pencil-rocket.png" alt="pencil-rocket" class="absolute top-0 right-0 -z-10">
+            <img src="./src/img/pencil-rocket.png" alt="pencil-rocket"
+                class="self-animation-leftToRight absolute top-0 -right-10 -z-10">
         </div>
     </section>
     <section class="portfolio">
         <div class="container">
             <h3 class="text-center text-lg font-bold text-[var(--primary-cyan)]">Latest Portfolio</h3>
-            <h1 class="text-center text-3xl font-bold">Exploring Minds Elementary School<br>Education the only school
+            <h1 class="text-center text-3xl font-bold wow fadeInUp animate__animated animate__fadeInUp">Exploring Minds
+                Elementary School<br>Education the only school
             </h1>
             <div class="pill-nav">
                 <!--Pills navigation-->
@@ -530,7 +543,7 @@
                 <!--Pills content-->
                 <div class="mb-6">
                     <!-- Pill 1 -->
-                    <div class="hidden opacity-100 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block"
+                    <div class="hidden opacity-100 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block wow fadeInUp animate__animated animate__fadeInUp"
                         id="pills-education" role="tabpanel" aria-labelledby="pills-education-tab" data-twe-tab-active>
                         <div class="education grid grid-cols-12 gap-7.5">
                             <div class="col-span-4 row-span-2 relative hover:[&_div]:opacity-80 duration-500">
@@ -608,7 +621,7 @@
                         </div>
                     </div>
                     <!-- Pill 2 -->
-                    <div class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block"
+                    <div class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block wow fadeInUp animate__animated animate__fadeInUp"
                         id="pills-school" role="tabpanel" aria-labelledby="pills-school-tab">
                         <div class="school grid grid-cols-12 gap-7.5">
                             <div
@@ -673,7 +686,7 @@
                         </div>
                     </div>
                     <!-- Pill 3 -->
-                    <div class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block"
+                    <div class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block wow fadeInUp animate__animated animate__fadeInUp"
                         id="pills-learn" role="tabpanel" aria-labelledby="pills-learn-tab">
                         <div class="learn grid grid-cols-12 gap-7.5">
                             <div class="col-start-1 col-span-6 relative hover:[&_div]:opacity-80 duration-500">
@@ -707,7 +720,7 @@
                         </div>
                     </div>
                     <!-- Pill 4 -->
-                    <div class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block"
+                    <div class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block wow fadeInUp animate__animated animate__fadeInUp"
                         id="pills-child" role="tabpanel" aria-labelledby="pills-child-tab">
                         <div class="child grid grid-cols-12 gap-7.5">
                             <div
@@ -742,7 +755,7 @@
                         </div>
                     </div>
                     <!-- Pill 5 -->
-                    <div class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block"
+                    <div class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block wow fadeInUp animate__animated animate__fadeInUp"
                         id="pills-coaching" role="tabpanel" aria-labelledby="pills-coaching-tab">
                         <div class="coaching grid grid-cols-12 gap-7.5">
                             <div class="col-span-4 row-span-2 relative hover:[&_div]:opacity-80 duration-500">
@@ -831,14 +844,16 @@
                 <div class="w-4/5 h-[320px] bg-[var(--primary-bgc)] absolute top-0 -right-4 -z-10 rounded-xl"></div>
                 <div class="w-1/3">
                     <h3 class="text-base font-bold text-[var(--primary-cyan)]">Latest Service</h3>
-                    <h1 class="text-3xl font-bold w-9/10">Building a Str Foundation for Success</h1>
+                    <h1 class="text-3xl font-bold w-9/10 wow fadeInUp animate__animated animate__fadeInUp">Building a
+                        Str Foundation for Success</h1>
                 </div>
                 <p class="text-[var(--primary-p)] w-1/2">Lorem ipsum dolor sit amet consectetur adipiscing elit platea
                     pharetra, nostra mattis
                     hendrerit proin mollis pretium facilisi in, ligula volutpat</p>
             </div>
             <div class="service-block relative">
-                <img src="./src/img/man.png" alt="service_boy" class="absolute bottom-0 left-0">
+                <img src="./src/img/man.png" alt="service_boy"
+                    class="self-animation-leftToRight absolute bottom-0 left-0">
                 <div class="flex justify-between">
                     <div class="">
                         <div>
@@ -887,17 +902,18 @@
                                             <h3 class="text-2xl font-bold mt-5 w-[80%] cursor-pointer duration-500">
                                                 Learning in the School</h3>
                                             <div class="content opacity-0 duration-500">
-                                              <p class="text-base text-[var(--primary-p)] my-5">Lorem ipsum dolor sit amet
-                                                a
-                                                the a
-                                                conse adipiscing</p>
-                                            <p class="hover:[&_i]:translate-x-2 cursor-pointer">
-                                                Read More
-                                                <i
-                                                    class="fa fa-arrow-right mx-2 duration-500 text-[var(--primary-green)]"></i>
-                                            </p>  
+                                                <p class="text-base text-[var(--primary-p)] my-5">Lorem ipsum dolor sit
+                                                    amet
+                                                    a
+                                                    the a
+                                                    conse adipiscing</p>
+                                                <p class="hover:[&_i]:translate-x-2 cursor-pointer">
+                                                    Read More
+                                                    <i
+                                                        class="fa fa-arrow-right mx-2 duration-500 text-[var(--primary-green)]"></i>
+                                                </p>
                                             </div>
-                                            
+
                                         </div>
 
                                     </div>
@@ -908,18 +924,19 @@
                                             <i class="fa fa-puzzle-piece text-[60px] text-[var(--primary-green)]"></i>
                                             <h3 class="text-2xl font-bold mt-5 w-[80%] cursor-pointer duration-500">
                                                 Stars Preschool our design</h3>
-                                                <div class="content opacity-0 duration-500">
-                                                  <p class="text-base text-[var(--primary-p)] my-5">Lorem ipsum dolor sit amet
-                                                a
-                                                the a
-                                                conse adipiscing</p>
-                                            <p class="hover:[&_i]:translate-x-2 cursor-pointer">
-                                                Read More
-                                                <i
-                                                    class="fa fa-arrow-right mx-2 duration-500 text-[var(--primary-green)]"></i>
-                                            </p>  
-                                                </div>
-                                            
+                                            <div class="content opacity-0 duration-500">
+                                                <p class="text-base text-[var(--primary-p)] my-5">Lorem ipsum dolor sit
+                                                    amet
+                                                    a
+                                                    the a
+                                                    conse adipiscing</p>
+                                                <p class="hover:[&_i]:translate-x-2 cursor-pointer">
+                                                    Read More
+                                                    <i
+                                                        class="fa fa-arrow-right mx-2 duration-500 text-[var(--primary-green)]"></i>
+                                                </p>
+                                            </div>
+
                                         </div>
 
                                     </div>
@@ -930,18 +947,19 @@
                                             <i class="fa fa-puzzle-piece text-[60px] text-[var(--primary-green)]"></i>
                                             <h3 class="text-2xl font-bold mt-5 w-[80%] cursor-pointer duration-500">
                                                 Stars Preschool our design</h3>
-                                                <div class="content opacity-0 duration-500 cursor-pointer">
-                                                    <p class="text-base text-[var(--primary-p)] my-5">Lorem ipsum dolor sit amet
-                                                a
-                                                the a
-                                                conse adipiscing</p>
-                                            <p class="hover:[&_i]:translate-x-2">
-                                                Read More
-                                                <i
-                                                    class="fa fa-arrow-right mx-2 duration-500 text-[var(--primary-green)]"></i>
-                                            </p>
-                                                </div>
-                                            
+                                            <div class="content opacity-0 duration-500 cursor-pointer">
+                                                <p class="text-base text-[var(--primary-p)] my-5">Lorem ipsum dolor sit
+                                                    amet
+                                                    a
+                                                    the a
+                                                    conse adipiscing</p>
+                                                <p class="hover:[&_i]:translate-x-2">
+                                                    Read More
+                                                    <i
+                                                        class="fa fa-arrow-right mx-2 duration-500 text-[var(--primary-green)]"></i>
+                                                </p>
+                                            </div>
+
                                         </div>
 
                                     </div>
@@ -961,7 +979,8 @@
             </div>
             <div class="content flex-1/2 flex flex-col justify-center">
                 <h3 class="text-lg font-bold text-[var(--primary-cyan)]">Some Faq</h3>
-                <h1 class="text-3xl font-bold w-4/5">Empowering Children Through Education Playful Mind</h1>
+                <h1 class="text-3xl font-bold w-4/5 wow fadeInUp animate__animated animate__fadeInUp">Empowering
+                    Children Through Education Playful Mind</h1>
                 <div class="accordion py-10">
                     <div id="accordionExample">
                         <div
@@ -1061,8 +1080,11 @@
     </section>
     <section class="professional py-20">
         <div class="container">
-            <h3 class="text-center text-lg font-bold text-[var(--primary-cyan)]">Meet Our Professional</h3>
-            <h1 class="text-center text-3xl font-bold">Joyful Journeys Childcare and the<br>Of a Education</h1>
+            <h3
+                class="text-center text-lg font-bold text-[var(--primary-cyan)] wow fadeInUp animate__animated animate__fadeInUp">
+                Meet Our Professional</h3>
+            <h1 class="text-center text-3xl font-bold wow fadeInUp animate__animated animate__fadeInUp">Joyful Journeys
+                Childcare and the<br>Of a Education</h1>
             <div class="professional-tags flex gap-7 pt-20">
                 <div
                     class="tag-item group border border-transparent shadow shadow-3xl hover:border hover:border-[var(--primary-green)] p-10 rounded-tl-[50px] rounded-tr-[10px] rounded-br-[50px] rounded-bl-[10px] duration-300">
@@ -1155,8 +1177,10 @@
         <div class="container flex items-center relative pb-[100px] gap-8">
             <div class="text-block flex-4/10 pl-5">
                 <h3 class="text-lg font-bold text-[var(--primary-cyan)]">Student knowledge</h3>
-                <h1 class="text-3xl font-bold w-7/10">Knowledge for All learn design Excellence for Everyone</h1>
-                <p class="text-[var(--primary-p)] my-7">Lorem ipsum dolor sit amet consectetur adipiscing elit platea
+                <h1 class="text-3xl font-bold w-7/10 wow fadeInUp animate__animated animate__fadeInUp">Knowledge for All
+                    learn design Excellence for Everyone</h1>
+                <p class="text-[var(--primary-p)] my-7 wow fadeInUp animate__animated animate__fadeInUp">Lorem ipsum
+                    dolor sit amet consectetur adipiscing elit platea
                     the osr
                     of a proin mollis pretium
                     facilisi in, ligula volutpat</p>
@@ -1171,43 +1195,45 @@
                 <div class="flex flex-col justify-end items-end gap-7 pt-20">
                     <div
                         class="w-[250px] h-[180px] bg-[#0A6375] rounded-xl flex justify-center items-center text-white">
-                        <h1 class="text-2xl font-bold text-center">1-2<br>Years</h1>
+                        <p class="text-2xl font-bold text-center">1-2<br>Years</p>
                     </div>
                     <div
                         class="w-[180px] h-[150px] bg-[var(--primary-orange)] rounded-xl flex justify-center items-center text-white">
-                        <h1 class="text-2xl font-bold text-center">
-                            9-11<br>Years</h1>
+                        <p class="text-2xl font-bold text-center">
+                            9-11<br>Years</p>
                     </div>
                 </div>
                 <div class="grid grid-cols-2 gap-7">
                     <div
                         class="w-[180px] h-[150px] bg-[var(--primary-cyan)] rounded-xl flex justify-center items-center text-white">
-                        <h1 class="text-2xl font-bold text-center">3-5<br>Years</h1>
+                        <p class="text-2xl font-bold text-center">3-5<br>Years</p>
                     </div>
                     <div
                         class="w-[180px] h-[150px] bg-[var(--primary-pink)] rounded-xl flex justify-center items-center text-white row-start-2">
-                        <h1 class="text-2xl font-bold text-center">6-8<br>Years</h1>
+                        <p class="text-2xl font-bold text-center">6-8<br>Years</p>
                     </div>
                     <div
                         class="w-[180px] h-[150px] bg-[var(--primary-orange)] rounded-xl flex justify-center items-center text-white col-start-2 row-start-2 col-span-1">
-                        <h1 class="text-2xl font-bold text-center">12-15<br>Years</h1>
+                        <p class="text-2xl font-bold text-center">12-15<br>Years</p>
                     </div>
                     <div
                         class="w-[180px] h-[150px] bg-[var(--primary-green)] rounded-xl flex justify-center items-center text-white row-start-3">
-                        <h1 class="text-2xl font-bold text-center">16-18<br>Years</h1>
+                        <p class="text-2xl font-bold text-center">16-18<br>Years</p>
                     </div>
                 </div>
             </div>
         </div>
         <img src="./src/img/knowledge-lshpe.png" alt="tree" class="absolute bottom-0 left-0">
-        <img src="./src/img/knowledge-animal.png" alt="turtle" class="absolute top-0 right-0 scale-80">
+        <img src="./src/img/knowledge-animal.png" alt="turtle"
+            class="self-animation-leftToRight absolute top-0 -right-5 scale-80">
     </section>
     <section class="testimonial py-20">
         <div class="container">
             <div class="title-block flex justify-between my-[50px]">
                 <div class="max-w-[400px]">
                     <h3 class="text-lg font-bold text-[var(--primary-cyan)]">Clients Testimonial</h3>
-                    <h1 class="text-3xl font-bold">Unlocking the Power of Wonderworks Child</h1>
+                    <h1 class="text-3xl font-bold wow fadeInUp animate__animated animate__fadeInUp">Unlocking the Power
+                        of Wonderworks Child</h1>
                 </div>
                 <p class="w-[400px] text-[var(--primary-p)]">Use receiving accounts a number a currencies and get paid
                     like a local Use receivin
@@ -1318,10 +1344,11 @@
     <section class="blog bg-[linear-gradient(180deg,_#FFF0E5_0%,_rgba(255,_240,_229,_0.00)_100%)] py-20">
         <div class="container">
             <h3 class="text-base font-bold text-[var(--primary-cyan)]">Latest Blog And News</h3>
-            <h1 class="text-3xl font-bold w-1/2">Wonderworks Child Development Center Discovery Kids Preschool</h1>
+            <h1 class="text-3xl font-bold w-1/2 wow fadeInUp animate__animated animate__fadeInUp">Wonderworks Child
+                Development Center Discovery Kids Preschool</h1>
             <div class="grid grid-cols-2 gap-7">
                 <div
-                    class="flex p-3 bg-white rounded-lg gap-5 items-center drop-shadow-[0px_4.8px_24.4px_rgba(19,16,34,0.10)]">
+                    class="flex p-3 bg-white rounded-lg gap-5 items-center drop-shadow-[0px_4.8px_24.4px_rgba(19,16,34,0.10)] wow fadeInUp animate__animated animate__fadeInUp">
                     <img src="./src/img/blog-1.png">
                     <div>
                         <div class="flex gap-5">
@@ -1343,7 +1370,7 @@
                     </div>
                 </div>
                 <div
-                    class="bg-white rounded-lg gap-5 items-center col-start-2 row-span-2 drop-shadow-[0px_4.8px_24.4px_rgba(19,16,34,0.10)]">
+                    class="bg-white rounded-lg gap-5 items-center col-start-2 row-span-2 drop-shadow-[0px_4.8px_24.4px_rgba(19,16,34,0.10)] wow fadeInUp animate__animated animate__fadeInUp">
                     <img src="./src/img/blog-3.png">
                     <div class="py-6 pl-10">
                         <div class="flex gap-5">
@@ -1365,7 +1392,7 @@
                     </div>
                 </div>
                 <div
-                    class="flex p-3 bg-white rounded-lg gap-5 items-center drop-shadow-[0px_4.8px_24.4px_rgba(19,16,34,0.10)]">
+                    class="flex p-3 bg-white rounded-lg gap-5 items-center drop-shadow-[0px_4.8px_24.4px_rgba(19,16,34,0.10)] wow fadeInUp animate__animated animate__fadeInUp">
                     <img src="./src/img/blog-2.png">
                     <div class="">
                         <div class="flex gap-5">
@@ -1392,12 +1419,14 @@
     <section class="connect bg-[linear-gradient(180deg,_rgba(238,255,200,0.00)_0%,_#E9FFB6_100%)]">
         <div class="bg-[url(/src/img/bg-img.png)] bg-no-repeat bg-contain bg-bottom">
             <div class="container flex items-center justify-between">
-                <div class="bg-[url(/src/img/egg-shap.png)] bg-contain bg-no-repeat bg-bottom w-[600px]">
+                <div
+                    class="bg-[url(/src/img/egg-shap.png)] bg-contain bg-no-repeat bg-bottom w-[600px] self-animation-leftToRight">
                     <img src="./src/img/student.png" alt="student" class="mx-auto">
                 </div>
                 <div class="w-[530px]">
-                    <h3 class="text-base font-bold">Get Connected</h3>
-                    <h1 class="text-3xl font-bold">Education That Sparks Imaginat Nuturing Curiosity Inspire</h1>
+                    <h3 class="text-base font-bold wow fadeInUp animate__animated animate__fadeInUp">Get Connected</h3>
+                    <h1 class="text-3xl font-bold wow fadeInUp animate__animated animate__fadeInUp">Education That
+                        Sparks Imaginat Nuturing Curiosity Inspire</h1>
                     <form action="#" class="my-10 relative">
                         <input type="email" placeholder="Enter Your Email"
                             class="border rounded-lg w-full h-20 bg-white pl-6">
@@ -1419,7 +1448,7 @@
         </div>
     </section>
     <section class="externalLinks py-20">
-        <div class="container flex justify-between gap-10">
+        <div class="container flex justify-between gap-10 wow fadeInUp animate__animated animate__fadeInUp">
             <div class="social w-1/3">
                 <div class="logo flex items-center gap-1 cursor-pointer">
                     <img src="./src/img/logo.png" alt="logo">
@@ -1496,23 +1525,22 @@
     </section>
     <footer class="footer py-10">
         <div class="container flex justify-between items-center relative">
-            <p class="text-[var(--primary-p)]">© Yoursite name 2025 | All Rights Reserved</p>
-            <div class="privacy flex gap-10">
+            <p class="text-[var(--primary-p)] wow fadeInLeft animate__animated animate__fadeInLeft">© Yoursite name 2025
+                | All Rights Reserved</p>
+            <div class="privacy flex gap-10 wow fadeInRight animate__animated animate__fadeInRight">
                 <a href="#">Terms & Condition</a>
                 <a href="#">Privacy Policy</a>
                 <a href="#">Contact Us</a>
             </div>
-            <div class="ontop w-12 h-12 bg-[var(--primary-orange)] rounded-full flex justify-center items-center text-lg text-white cursor-pointer absolute -top-10 right-0 -translate-y-1/2" onclick="scrollnow('contact')"><i class="fa fa-arrow-up"></i></div>
+            <div class="ontop w-12 h-12 bg-[var(--primary-orange)] rounded-full flex justify-center items-center text-lg text-white cursor-pointer absolute -top-10 right-0 -translate-y-1/2"
+                onclick="scrollnow('contact')"><i class="fa fa-arrow-up"></i></div>
         </div>
     </footer>
     <!-- SCRIPT -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="./src/js/index.js"></script>
     <script src="/node_modules/tw-elements/js/tw-elements.umd.min.js"></script>
     <script src="js/wow.min.js"></script>
-    <script>
-        new WOW().init();
-    </script>
+    <script src="./src/js/index.js"></script>
 </body>
 
 </html>
