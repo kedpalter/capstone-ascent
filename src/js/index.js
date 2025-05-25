@@ -3,17 +3,35 @@
 // import 'swiper/css/navigation';
 // import 'swiper/css/pagination';
 
-new Swiper('.testimonial-swiper', {
-    slidesPerView: 1, // 1 slide mỗi lần
-    spaceBetween: 16,
-    loop: true, // Vòng lặp vô tận
-    grabCursor: true, // Hiển thị con trỏ kéo chuột
+const service = new Swiper('.service-swiper', {
+    autoplay: {
+        delay: 5000,
+    },
+    slidesPerView: 3, 
+    spaceBetween: 30,
+    centeredSlides: true,
+    loop: true, 
+    grabCursor: false, 
+    pagination: {
+        el: '.service-pagination',
+        clickable: true,
+    },
+});
+
+const testimonial = new Swiper('.testimonial-swiper', {
+    autoplay: {
+        delay: 5000,
+    },
+    slidesPerView: 1, 
+    spaceBetween: 0,
+    loop: true, 
+    grabCursor: false, 
     pagination: {
         el: '.swiper-pagination',
         clickable: true,
     },
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
+    // navigation: {
+    //     nextEl: '.swiper-button-next',
+    //     prevEl: '.swiper-button-prev',
+    // },
 });

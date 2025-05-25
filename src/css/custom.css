@@ -1,0 +1,7 @@
+.swiper-slide-active {
+    background-color: white;
+}
+.swiper-slide-active .content {
+    opacity: 100;
+    transition: 0.5s;
+}

@@ -16,7 +16,9 @@
 .container {
     margin: auto;
 }
-
+.swiper-pagination-bullet {
+    
+}
 @import "tailwindcss";
 @config "../../tailwind.config.js";
 /* Config tailwind để custom cấu hình */
